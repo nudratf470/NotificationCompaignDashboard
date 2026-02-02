@@ -1,0 +1,15 @@
+.bodyContainer{
+    display: flex;
+}
+.sideBar{
+    margin:0;
+    padding:0;
+    width: 41px !important;
+}
+
+.bodyContent{
+    margin:0;
+    padding:1px 24px;
+    flex:1;
+}
+

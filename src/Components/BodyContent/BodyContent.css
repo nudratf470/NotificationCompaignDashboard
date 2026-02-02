@@ -1,0 +1,25 @@
+
+
+.preview-cards{
+  display: flex;
+  gap: 15px;
+  height: auto;              
+  max-height: none;          
+  flex-wrap: wrap;           
+  align-items: stretch;
+}
+
+.NotificationPreview h4{
+  font-size: 18px;
+  font-weight: bold;
+  margin-left:12px;
+  color:var(--brand-HeadingColor);
+}
+
+.NotificationPreview{
+  border-radius: 14px;
+  background-color: white;
+  padding: 20px;
+  flex: 1;
+  border: 0.8px solid rgba(0, 0, 0, 0.08);
+}

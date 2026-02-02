@@ -1,0 +1,41 @@
+.top-header{
+    background-color: var(--brand-blue)!important;
+    margin: 0!important;
+    padding: 0; 
+}
+
+.logo{
+  max-height: 30px;
+  display: block;       
+  margin: auto 0;
+  padding: 0;
+}
+
+.navbar.top-header {
+  height: 40px;
+}
+
+.header-headings{
+font-family: "Roboto", sans-serif;
+font-size: 12px;
+line-height: 1.3;
+margin-right: 30px;
+}
+
+.adminIcon{
+  max-width: 26px;
+  max-height: 26px;
+}
+
+.admin{
+  font-weight: 400!important;
+  font-size: 12px;
+}
+
+.expert{
+  font-weight: 600!important;
+  font-size: 12px;
+}
+
+
+

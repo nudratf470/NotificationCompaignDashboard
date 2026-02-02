@@ -1,0 +1,42 @@
+.moon-icon{
+    background-color: var(--brand-lightGray);
+    border-radius: 8px;
+    width: 33px;
+    height: 33px;
+    display: inline-flex; 
+    align-items: center; 
+    justify-content: center;
+}
+
+.yellowButton{
+    background-color: var(--brand-yellow)!important;
+    border-radius: 8px!important;
+    border: none!important;
+    height: 40px!important;
+    padding: 0 15px !important;
+}
+
+.yellowButton span{
+    font-size: 14px;
+    font-weight: 500 !important;
+}
+
+
+.plusIcon{
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
+}
+
+.top-bar{
+    background-color: white;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.08);
+    height: 51px!important;
+}
+
+.topbar-heading{
+color: #404145;
+font-size: 18px !important;
+font-weight: 500;
+}
+

@@ -1,0 +1,9 @@
+.BlueButton{
+width: 259px !important;
+border: none !important;
+height: 48px !important;
+background: #008EF5 !important;
+border-radius: 10px;
+font-size: 16px;
+color: white;
+}

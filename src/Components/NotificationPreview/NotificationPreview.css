@@ -1,0 +1,60 @@
+.appointment-updated{
+    background-color: var(--brand-lightGray);
+   
+    max-width: 360px;
+    margin:auto;
+    border-radius: 12px;
+    padding: 15px;
+    max-height: 308px;
+    height: 100%;
+}
+
+.appoinment{
+    background-color: white;
+    max-width: 328px !important;
+    margin:25px 0px 18px 0;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.08) !important;  
+    border: 1px solid rgb(240, 240, 240);
+}
+
+.Bell-iconbg{
+background-color: var(--brand-primary);
+display: flex;
+align-items: center;
+justify-content: center;
+width: 48px;
+height: 48px;
+border-radius: 8px;
+}
+
+.appoinment h4{
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--brand-headingColor);
+}
+
+.appoinment p{
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--brand-bodyColor);
+    max-width: 216px;
+}
+
+.details{
+    background-color: white;
+    border-radius: 16px;
+    max-width: 137px;
+    margin: auto;
+    padding: 5px 10px;
+}
+
+.details span{
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--brand-bodyColor);
+    display: flex;
+    align-items: center;
+
+}
