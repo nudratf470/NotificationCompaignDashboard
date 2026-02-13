@@ -1,60 +1,114 @@
-.appointment-updated{
-    background-color: var(--brand-lightGray);
-   
-    max-width: 360px;
-    margin:auto;
-    border-radius: 12px;
-    padding: 15px;
-    max-height: 308px;
-    height: 100%;
+.appointment-updated {
+  background-color: #F8F9FE;
+  max-width: 360px;
+  width: 90%; /* allow some flexibility on smaller screens */
+  margin: auto;
+  border-radius: 12px;
+  padding: 15px;
+  /* Remove fixed max-height to prevent cutting off content */
+  /* max-height: 308px; */
+  /* height: 100%; */
+  box-sizing: border-box; /* make padding included in width */
 }
 
-.appoinment{
-    background-color: white;
-    max-width: 328px !important;
-    margin:25px 0px 18px 0;
-    border-radius: 12px;
-    padding: 15px;
-    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.08) !important;  
-    border: 1px solid rgb(240, 240, 240);
+.appoinment {
+  background-color: white;
+  width: 100%; /* take full width of parent */
+  max-width: 328px; /* keep max width */
+  margin: 25px 0 18px 0;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgb(240, 240, 240);
+  display: flex;
+  gap: 12px; /* space between icon and text */
+  align-items: flex-start;
+  box-sizing: border-box;
 }
 
-.Bell-iconbg{
-background-color: var(--brand-primary);
-display: flex;
-align-items: center;
-justify-content: center;
-width: 48px;
-height: 48px;
-border-radius: 8px;
+.Bell-iconbg {
+  background-color: var(--brand-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  flex-shrink: 0; /* prevent shrinking on small screens */
 }
 
-.appoinment h4{
-    font-size: 16px;
-    font-weight: 600;
-    color: var(--brand-headingColor);
+.appoinment h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--brand-headingColor);
+  margin: 0; /* reset margin */
 }
 
-.appoinment p{
+.appoinment p {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--brand-bodyColor);
+  margin-top: 8px;
+  max-width: 100%; /* allow full width */
+  word-wrap: break-word; /* prevent overflow */
+  line-height: 1.4;
+}
+
+.details {
+  background-color: white;
+  border-radius: 16px;
+  max-width: 137px;
+  width: 80%; /* more flexible */
+  margin: auto;
+  padding: 5px 10px;
+  box-sizing: border-box;
+  text-align: center; /* center text & icon */
+}
+
+.details span {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--brand-bodyColor);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px; /* space between icon and text */
+}
+
+/* Responsive tweaks */
+@media (max-width: 480px) {
+  .appointment-updated {
+    max-width: 100%;
+    padding: 12px;
+  }
+
+  .appoinment {
+    max-width: 100%;
+    padding: 12px;
+    flex-direction: row; /* keep icon and text side by side */
+    gap: 10px;
+  }
+
+  .Bell-iconbg {
+    width: 40px;
+    height: 40px;
+  }
+
+  .appoinment h4 {
     font-size: 14px;
-    font-weight: 400;
-    color: var(--brand-bodyColor);
-    max-width: 216px;
-}
+  }
 
-.details{
-    background-color: white;
-    border-radius: 16px;
-    max-width: 137px;
-    margin: auto;
-    padding: 5px 10px;
-}
+  .appoinment p {
+    font-size: 13px;
+  }
 
-.details span{
-    font-size: 12px;
-    font-weight: 400;
-    color: var(--brand-bodyColor);
-    display: flex;
-    align-items: center;
+  .details {
+    max-width: 120px;
+    width: 90%;
+    padding: 6px 8px;
+  }
 
+  .details span {
+    font-size: 11px;
+  }
 }

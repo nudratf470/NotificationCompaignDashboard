@@ -1,6 +1,6 @@
 import React from "react";
 import moon from "../../assets/images/moon.svg";
-import { Col, Row} from "react-bootstrap";
+import { Col, Row } from "react-bootstrap";
 import { InputGroup, FormControl, Button } from "react-bootstrap";
 import "./TemplateListTopBar.css";
 
@@ -13,19 +13,79 @@ const TemplateListTopBar = () => {
         </div>
         <h3 className="mb-0 TemplateTopbar-heading">Template list</h3>
       </Col>
-    <Col>
-    <InputGroup className="search-bar"> 
-    <InputGroup.Text className="search-icon"> 
-     </InputGroup.Text> <FormControl placeholder="Search" aria-label="Search" className="search-input" /> 
-     <Button variant="outline-secondary" className="filter-button"> <FaSlidersH /> 
-     </Button> </InputGroup>
-     </Col>
+
       <Col>
+        <InputGroup className="search-bar d-flex align-items-center ms-4">
+          <InputGroup.Text className="search-icon">
+            <svg
+              width="15"
+              height="15"
+              viewBox="0 0 15 15"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M14.5 14.5L13.1 13.1M7.15 13.8C8.02329 13.8 8.88803 13.628 9.69484 13.2938C10.5017 12.9596 11.2348 12.4698 11.8523 11.8523C12.4698 11.2348 12.9596 10.5017 13.2938 9.69484C13.628 8.88803 13.8 8.02329 13.8 7.15C13.8 6.27671 13.628 5.41197 13.2938 4.60516C12.9596 3.79834 12.4698 3.06525 11.8523 2.44774C11.2348 1.83023 10.5017 1.34039 9.69484 1.0062C8.88803 0.672007 8.02329 0.5 7.15 0.5C5.38631 0.5 3.69486 1.20062 2.44774 2.44774C1.20062 3.69486 0.5 5.38631 0.5 7.15C0.5 8.91369 1.20062 10.6051 2.44774 11.8523C3.69486 13.0994 5.38631 13.8 7.15 13.8Z"
+                stroke="#969696"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
+          </InputGroup.Text>
+
+          <FormControl
+            placeholder="Search"
+            aria-label="Search"
+            className="search-input"
+          />
+
+          <Button className="filter-button">
+            <svg
+              width="14"
+              height="14"
+              viewBox="0 0 14 14"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M11.6641 4.08398H6.41406"
+                stroke="#B8B8B8"
+                stroke-width="1.25"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M8.16406 9.91602H2.91406"
+                stroke="#B8B8B8"
+                stroke-width="1.25"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M9.91406 11.666C10.8806 11.666 11.6641 10.8825 11.6641 9.91602C11.6641 8.94952 10.8806 8.16602 9.91406 8.16602C8.94756 8.16602 8.16406 8.94952 8.16406 9.91602C8.16406 10.8825 8.94756 11.666 9.91406 11.666Z"
+                stroke="#B8B8B8"
+                stroke-width="1.25"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M4.08594 5.83398C5.05244 5.83398 5.83594 5.05048 5.83594 4.08398C5.83594 3.11749 5.05244 2.33398 4.08594 2.33398C3.11944 2.33398 2.33594 3.11749 2.33594 4.08398C2.33594 5.05048 3.11944 5.83398 4.08594 5.83398Z"
+                stroke="#B8B8B8"
+                stroke-width="1.25"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </Button>
+        </InputGroup>
+      </Col>
+
+      <Col xs="auto">
         <button className="add">Add</button>
       </Col>
 
-      <Col className="d-flex justify-content-end">
-        <div className="setting-icon">
+      <Col xs="auto" className="pe-4">
+        <div className="setting-icon d-flex align-items-center justify-content-center">
           <svg
             width="16"
             height="16"

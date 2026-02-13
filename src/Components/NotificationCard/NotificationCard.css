@@ -1,14 +1,14 @@
 
-/*body{
-    background-color: rgb(49, 49, 49)!important;
-}*/
 
 .notificationCard{
     background-color: white;
-    border-radius: 14px !important;
-    border: none!important;
-    padding:24px 24px 0.8px;
-    height: 140px !important;
+    border-radius: 16px !important;
+    border: 0.8 solid #E5E7EB;
+    padding:20px 24px 0.8px;
+    max-height: 135px !important;
+    height: 100%;
+    max-width: 224px;
+    width: 100%;
 }
 
 .heading-icon img{
@@ -21,7 +21,7 @@
 }
 
 .line-tight{
-    line-height: 0.7; 
+    line-height: 1; 
     margin: 0;
 }
 

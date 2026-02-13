@@ -1,0 +1,116 @@
+.components-sidebar {
+  max-width: 237px;
+  width: 100%;
+  background: #F9F9FF;
+  border: 0.5px solid #DCDCDC;
+  padding: 8px 8px 0 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  height: calc(100vh - 120px);
+  border-radius: 12px;
+}
+
+.component-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 12px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  position: relative; border-bottom: 1px solid #E6E6E6;
+}
+
+
+.component-item:last-child {
+  border-bottom: none;
+}
+
+
+.component-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+
+
+.component-label {
+  font-size: 14px;
+  font-weight: 400;
+  color: #494949;
+  padding-left:5px;
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+.add-btn {
+  width: 24px;
+  height: 24px;
+  background: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 1;          /* always visible */
+  flex-shrink: 0;
+  padding: 0;
+}
+
+
+
+.add-btn svg {
+  display: block;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .components-sidebar {
+    width: 200px;
+    padding: 12px 10px;
+  }
+
+  .component-item {
+    padding: 8px 10px;
+    gap: 8px;
+  }
+
+  .component-label {
+    font-size: 12px;
+  }
+
+  .add-btn {
+    width: 22px;
+    height: 22px;
+  }
+
+  .add-btn svg {
+    width: 12px;
+    height: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .components-sidebar {
+    width: 60px;
+    padding: 12px 8px;
+  }
+
+  .component-label {
+    display: none;
+  }
+
+  .component-item {
+    justify-content: center;
+    padding: 10px;
+  }
+
+  .add-btn {
+    display: none;
+  }
+}

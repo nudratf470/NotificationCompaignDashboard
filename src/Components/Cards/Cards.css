@@ -1,25 +1,29 @@
-.compaign-cards{
-  margin-top: 5px!important;
+.compaign-cards {
+  margin-top: 5px !important;
+  
 }
 
-.Content-Card{
+.Content-Card {
   background-color: white;
   border-radius: 16px !important;
-  padding: 20px !important;
+  padding: 24.8px 24.8px 30px 24.8px !important;
   border: 1px solid rgb(236, 236, 236) !important;
   height: 100%;
-  padding: 24.8px 24.8px 30px 24.8px !important;
+  max-height: 173px;
+  display: flex;
+  flex-direction: column;
 }
 
-.card-heading{
+.card-heading {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 12px;
   flex-wrap: nowrap;
+  margin-bottom: 4px;
 }
 
-.iconbg{
+.iconbg {
   background-color: #e7eeff;
   display: flex;
   align-items: center;
@@ -29,107 +33,226 @@
   border-radius: 8px;
   flex-shrink: 0;
 }
-.iconbg .blue{
+
+.iconbg.Blue {
   background: linear-gradient(90deg, #C7D8FE 0%, #F0F4FF 100%);
 }
 
-.iconbg .Green{
-background: linear-gradient(90deg, #D1EFDC 0%, #EDF9F1 100%);
+.iconbg.Green {
+  background: linear-gradient(90deg, #D1EFDC 0%, #EDF9F1 100%);
 }
 
-.iconbg img{
+.iconbg img {
   width: 24px;
   height: 24px;
   object-fit: contain;
 }
 
-.arrowbg{
+.arrowbg {
   background: linear-gradient(90deg, #D1EFDC 0%, #EDF9F1 100%);
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
-  min-width: 81px;     
+  min-width: 81px;
   height: 28px;
-  padding: 0 10px;     
+  padding: 0 10px;
   border-radius: 8px;
   flex-shrink: 0;
 }
 
-.arrowbg img{
+.arrowbg img {
   width: 14px;
   height: 14px;
   object-fit: contain;
 }
 
-
-.notificationNumber{
+.notificationNumber {
   font-weight: 700;
   font-size: 32px;
-  margin: 0;
-  line-height: 1.8;
+  margin: 8px 0 4px 0;
+  line-height: 1.2;
 }
 
-.paragraphText{
+.paragraphText {
   font-size: 14px;
   font-weight: 400;
-  line-height: 1px;
+  line-height: 1.4;
   color: #4A5565;
   margin: 0;
 }
 
-.iconbgPink{
-background: linear-gradient(to right, #FCDDDD 0%, #FFFAFA 100%);
+.iconbgPink {
+  background: linear-gradient(to right, #FCDDDD 0%, #FFFAFA 100%);
 }
-.iconbgPink span{
+
+.iconbgPink span {
   color: #ef4444 !important;
 }
 
-.iconbgPurple{
-  background: linear-gradient(to right, #ECD2FF 0%, #F8EFFF 100%)!important;
+.iconbgPurple {
+  background: linear-gradient(to right, #ECD2FF 0%, #F8EFFF 100%) !important;
 }
 
-.arrowbg span{
+.arrowbg span {
   color: var(--brand-green);
   font-weight: 600;
   font-size: 12px;
   white-space: nowrap;
 }
 
-
-@media (max-width: 991px){
-  .Content-Card{
-    padding: 18px 18px 14px 18px !important;
-  }
-
-  .notificationNumber{
-    font-size: 28px;
-  }
+.card-heading {
+  flex-wrap: nowrap;
 }
 
-@media (max-width: 575px){
-  .Content-Card{
+.arrowbg {
+  flex-shrink: 0;
+}
+
+.iconbg {
+  flex-shrink: 0;
+}
+
+
+/* Tablet landscape and smaller desktops (768px - 991px) */
+@media (max-width: 991px) and (min-width: 768px) {
+  .Content-Card {
     padding: 20px !important;
   }
 
-  .notificationNumber{
-    font-size: 26px;
+  .notificationNumber {
+    font-size: 28px;
+    margin: 6px 0 4px 0;
   }
 
-  .paragraphText{
+  .paragraphText {
     font-size: 13px;
   }
 
-  .iconbg{
+  .iconbg {
+    width: 46px;
+    height: 46px;
+  }
+
+  .iconbg img {
+    width: 22px;
+    height: 22px;
+  }
+
+  .arrowbg {
+    min-width: 76px;
+    height: 27px;
+    gap: 7px;
+  }
+}
+
+/* Tablet portrait (576px - 767px) */
+@media (max-width: 767px) and (min-width: 576px) {
+  .Content-Card {
+    padding: 22px 20px 26px 20px !important;
+  }
+
+  .notificationNumber {
+    font-size: 30px;
+    margin: 8px 0 4px 0;
+  }
+
+  .paragraphText {
+    font-size: 14px;
+  }
+
+  .iconbg {
+    width: 48px;
+    height: 48px;
+  }
+
+  .arrowbg {
+    min-width: 78px;
+    height: 28px;
+  }
+}
+
+/* Mobile devices (up to 575px) */
+@media (max-width: 575px) {
+  .compaign-cards {
+    margin-top: 8px !important;
+  }
+
+  .Content-Card {
+    padding: 20px 18px 24px 18px !important;
+  }
+
+  .card-heading {
+    gap: 10px;
+  }
+
+  .notificationNumber {
+    font-size: 28px;
+    margin: 8px 0 4px 0;
+  }
+
+  .paragraphText {
+    font-size: 13px;
+  }
+
+  .iconbg {
     width: 44px;
     height: 44px;
   }
 
-  .arrowbg{
+  .iconbg img {
+    width: 22px;
+    height: 22px;
+  }
+
+  .arrowbg {
     min-width: 72px;
     height: 26px;
     gap: 6px;
+    padding: 0 8px;
+  }
+
+  .arrowbg img {
+    width: 12px;
+    height: 12px;
+  }
+
+  .arrowbg span {
+    font-size: 11px;
   }
 }
 
+/* Extra small mobile devices (up to 360px) */
+@media (max-width: 360px) {
+  .Content-Card {
+    padding: 18px 16px 22px 16px !important;
+  }
 
+  .notificationNumber {
+    font-size: 26px;
+  }
+
+  .paragraphText {
+    font-size: 12px;
+  }
+
+  .iconbg {
+    width: 42px;
+    height: 42px;
+  }
+
+  .iconbg img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .arrowbg {
+    min-width: 68px;
+    height: 24px;
+    gap: 5px;
+  }
+
+  .compaign-cards {
+    row-gap: 12px;
+  }
+}

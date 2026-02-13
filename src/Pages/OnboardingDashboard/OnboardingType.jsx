@@ -7,7 +7,7 @@ import './onboardingType.css';
 
 const OnboardingType = () => {
   return (
-    <>
+    <div className='OnboardingType'>
     <Header/>
     <TopBar/>
     <div className="bodyContainer">
@@ -18,7 +18,7 @@ const OnboardingType = () => {
     <BodyContent/>
     </div>
     </div>
-    </>
+    </div>
   )
 }
 

@@ -1,0 +1,18 @@
+.manageStaff {
+  background-color: #EBECF7 !important;
+}
+
+.manageStaff-bodyContainer {
+  display: flex;
+}
+
+.manageStaff-sidebar {
+  margin: 0;
+  padding: 0;
+  width: 41px !important;
+}
+
+.manageStaff-dashboard {
+  margin: 0;
+  flex: 1;
+}

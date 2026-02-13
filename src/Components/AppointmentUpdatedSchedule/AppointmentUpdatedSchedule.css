@@ -1,12 +1,12 @@
 .AppointmentupdatedSchedule {
   margin: auto;
   background-color: rgb(255, 255, 255) !important;
-  max-width: 380px;
+  max-width: 358px;
+  width: 100%;
   border-radius: 12px;
   box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.08);
-  padding: 30px 20px 20px;
+  padding: 20px 20px 20px;
   border: 1px solid rgb(240, 240, 240);
-  box-sizing: border-box;
 }
 
 .delivered-iconbg {
@@ -35,25 +35,27 @@
   text-align: center;
 }
 
-.updatedTiming {
+  .updatedTiming {
   background: #F9FAFB;
   border-radius: 14px;
-  margin: 10px 15px;
-  max-width: 338px;
+  margin: 10px auto;
   width: 100%;
-  padding: 16px 14px !important;
-
+  padding: 16px 5px;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  align-items: flex-start; 
+  justify-content: center;
   gap: 14px;
+  box-sizing: border-box;
 }
 
-.timingBlock {
+
+ .timingBlock {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 6px;
+  align-items: center; 
 }
+
 
 .timingTitle {
   font-size: 12px;
@@ -69,16 +71,16 @@
 }
 
 .timingCard {
-  width: 132px;
-  height: 74px;
+  min-height: 74px; 
   border-radius: 10px;
-  padding: 10px 12px;
-
+  padding: 8px 10px; 
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 8px;
+  gap: 6px;
+  box-sizing: border-box;
 }
+
 
 .previous {
   background: #FFFFFF;
@@ -95,7 +97,7 @@
 .rowItem {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 6px;
 }
 
 .rowItem p {

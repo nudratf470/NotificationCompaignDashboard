@@ -6,13 +6,13 @@ import BlueButton from "../BlueButton/BlueButton";
 const AppointmentUpdatedSchedule = () => {
   return (
     <>
-      <div className="AppointmentupdatedSchedule mt-5 d-flex flex-column align-items-center gap-1">
+      <div className="AppointmentupdatedSchedule mt-4 d-flex flex-column align-items-center gap-1">
         <div className="delivered-iconbg">
           <img src={done} className="" />
         </div>
         <h3>Appointment Updated</h3>
         <p>Your appointment has been successfully rescheduled.</p>
-        <div className="updatedTiming d-flex align-items-center justify-content-between">
+        <div className="updatedTiming d-flex align-items-center justify-content-center">
           <div className="timingBlock">
             <div className="timingTitle">Previous</div>
 

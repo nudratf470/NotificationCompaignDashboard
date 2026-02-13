@@ -1,15 +1,50 @@
-.bodyContainer{
-    display: flex;
-}
-.sideBar{
-    margin:0;
-    padding:0;
-    width: 41px !important;
+.OnboardingType {
+  background: #F8F9FE;
+  min-height: 100vh;
 }
 
-.bodyContent{
-    margin:0;
-    padding:0px 24px;
-    flex:1;
+/* Main layout */
+.bodyContainer {
+  display: flex;
+  width: 100%;
 }
 
+/* Sidebar (desktop unchanged) */
+.sidebar {
+  width: 41px;
+  flex-shrink: 0;
+}
+
+.bodyContent {
+  flex: 1;
+  padding: 0 10px;
+  min-width: 0;        /* REQUIRED */
+  max-width: 100%;     /* REQUIRED */
+  overflow-x: hidden;  /* REQUIRED */
+}
+
+
+/* ---------- RESPONSIVE ---------- */
+
+/* Tablets & below */
+@media (max-width: 991px) {
+  .bodyContainer {
+    flex-direction: column; /* stack layout */
+  }
+
+  .sidebar {
+    width: 100%;
+    display: none; /* usually hidden on mobile */
+  }
+
+  .bodyContent {
+    padding: 0 12px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 575px) {
+  .bodyContent {
+    padding: 0 10px;
+  }
+}

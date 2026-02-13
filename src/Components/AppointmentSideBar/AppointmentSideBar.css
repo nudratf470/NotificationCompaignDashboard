@@ -1,0 +1,112 @@
+.appointmentSidebarMenu {
+  width: 47px !important;
+  display: flex;
+  justify-content: center;
+}
+
+.appointmentSidebar-nav {
+  padding: 26px 0;
+  width: 100%;
+  border: 2px solid var(--brand-yellow);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  background-color: white;
+}
+
+/* Sidebar Navigation */
+.appointmentSidebar-nav .appointmentSidebar-link {
+  padding: 0 !important;
+  margin: 0 !important;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* Icon Wrapper */
+.appointmentSidebar-icon-wrap {
+  height: 34px;
+  width: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Active State */
+.appointmentSidebar-link.active {
+  justify-content: flex-end;
+}
+
+.appointmentSidebar-link.active .appointmentSidebar-icon-wrap {
+  background: var(--brand-yellow)!important;
+  border-radius: 7px 0 0 7px;
+  width: 37px;
+  height: 34px;
+  margin-right: 0;
+  margin-left: auto; 
+}
+
+/* Non-active */
+.appointmentSidebar-link:not(.active) {
+  justify-content: center;
+}
+
+/* Icon Size */
+.iconSize {
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+
+/* Hover */
+.appointmentSidebar-link:hover:not(.active) {
+  background-color: #F8F8F8;
+}
+
+.appointmentSidebar-link.active .appointmentSidebar-icon-wrap.cart:hover {
+  background: #FFE87C;
+}
+
+.adminimg {
+  width: 26px;
+  height: 65px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .appointmentSidebar-icon-wrap {
+    height: 30px;
+    width: 30px;
+  }
+
+  .appointmentSidebar-link.active .appointmentSidebar-icon-wrap.cart {
+    width: 34px;
+    height: 30px;
+  }
+
+  .iconSize {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+@media (max-width: 576px) {
+  .appointmentSidebar-icon-wrap {
+    height: 28px;
+    width: 28px;
+  }
+
+  .appointmentSidebar-link.active .appointmentSidebar-icon-wrap.cart {
+    width: 32px;
+    height: 28px;
+  }
+
+  .iconSize {
+    width: 16px;
+    height: 16px;
+  }
+}

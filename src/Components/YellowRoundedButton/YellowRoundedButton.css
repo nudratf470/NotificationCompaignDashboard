@@ -1,0 +1,15 @@
+.yellowRoundedButton{
+width: 195px;
+height: 38px;
+background: #FFD705!important;
+border-radius: 58px!important;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+text-align: center;
+color: #745D00!important;
+border: none!important;
+}
+.yellowRoundedButton:hover{
+background: #FFD705!important;
+}

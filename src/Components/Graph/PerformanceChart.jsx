@@ -74,7 +74,7 @@ export default function PerformanceChart() {
       <h4 className="performance-title">Performance Over Time</h4>
 
       <div className="performance-chart">
-        <ResponsiveContainer width={1166} height={368}>
+        <ResponsiveContainer width="100%" height={368}>
           <LineChart
             data={data}
            

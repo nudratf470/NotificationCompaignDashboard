@@ -1,0 +1,209 @@
+/* ---------- Page Background ---------- */
+.update-appointment-page {
+  background-color: #EBECF7;
+  min-height: 100vh;
+}
+
+/* ---------- Main Body Layout ---------- */
+.bodyContainer {
+  display: flex;
+
+}
+
+/* ---------- Left Narrow Sidebar ---------- */
+.status-sidebar {
+  width: 60px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+}
+
+/* ---------- Components Sidebar (Left Wide) ---------- */
+.components-sidebar-wrapper {
+  flex-shrink: 0;
+}
+
+/* ---------- Main Dashboard Area ---------- */
+.dashboard-status {
+  flex: 1;
+  background-color: #EBECF7;
+  padding: 12px 8px 0 8px;
+}
+
+/* ---------- Center Content Wrapper ---------- */
+.content-wrapper {
+  max-width: 100%;
+  margin: 0;
+  padding: 0 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* ---------- Notification Label ---------- */
+.notification-label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 8px 12px;
+  background: #F8F8F8;
+  border: 1.5px solid #EAEAEA;
+  border-radius: 8px;
+  height: 50px;
+  gap: 6px;
+}
+
+.notification-label span {
+  font-weight: 400;
+  font-size: 10px;
+  color: #AAAAAA;
+  line-height: 1;
+}
+
+.notification-label h5 {
+  font-weight: 400;
+  font-size: 14px;
+  color: #141313;
+  margin: 0;
+  line-height: 1.2;
+}
+
+/* ---------- Right Sidebar ---------- */
+.properties-sidebar-wrapper {
+  flex-shrink: 0;
+}
+
+/* ---------- Responsive Styles ---------- */
+@media (max-width: 992px) {
+  .dashboard-status {
+    padding: 12px;
+  }
+
+  .content-wrapper {
+    padding: 0 8px;
+  }
+
+  .components-sidebar {
+    width: 200px;
+    padding: 12px 10px;
+  }
+
+  .component-item {
+    padding: 8px 10px;
+    gap: 8px;
+  }
+
+  .component-label {
+    font-size: 12px;
+  }
+
+  .add-btn {
+    width: 22px;
+    height: 22px;
+  }
+
+  .add-btn svg {
+    width: 12px;
+    height: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Stack everything vertically */
+  .bodyContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  /* Status Sidebar */
+  .status-sidebar {
+    width: 100%;
+    order: 1;
+    display: flex;
+    justify-content: flex-start;
+    padding: 8px 0;
+  }
+
+  /* Main Dashboard */
+  .dashboard-status {
+    order: 2;
+    width: 100%;
+    padding: 12px 8px;
+  }
+
+  /* Combine Components + Properties Sidebar below dashboard */
+  .components-sidebar-wrapper,
+  .properties-sidebar-wrapper {
+    order: 3;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 0 8px;
+  }
+
+  /* Components Sidebar adjustments */
+  .components-sidebar {
+    width: 100%;
+    max-width: none;
+    height: auto;
+    flex-direction: row;
+    overflow-x: auto;
+    border-radius: 12px;
+    padding: 8px;
+  }
+
+  .component-item {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    min-width: 60px;
+  }
+
+  .component-label {
+    display: none; /* hide labels for compact view */
+  }
+
+  .add-btn {
+    display: none;
+  }
+
+  /* Properties Sidebar adjustments */
+  .nextbtnContainer,
+  .previewOptions {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    padding: 12px;
+  }
+
+  .option-icons {
+    justify-content: flex-start;
+    gap: 8px;
+  }
+}
+
+@media (max-width: 576px) {
+  /* Further compact adjustments for very small screens */
+  .component-item {
+    min-width: 50px;
+    padding: 6px;
+  }
+
+  .components-sidebar {
+    padding: 6px;
+  }
+
+  .content-wrapper {
+    padding: 0 4px;
+    gap: 16px;
+  }
+
+  .notification-label {
+    padding: 6px 8px;
+    gap: 4px;
+    height: 45px;
+  }
+}
