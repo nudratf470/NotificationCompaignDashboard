@@ -7,15 +7,13 @@ import "./TemplateListTopBar.css";
 const TemplateListTopBar = () => {
   return (
     <Row className="top-bar align-items-center mx-0">
-      <Col className="d-flex align-items-center gap-4" xs="auto">
+      <Col className="d-flex align-items-center gap-4">
         <div className="moon-icon">
           <img src={moon} alt="moon" />
         </div>
         <h3 className="mb-0 TemplateTopbar-heading">Template list</h3>
-      </Col>
-
-      <Col>
-        <InputGroup className="search-bar d-flex align-items-center ms-4">
+      
+        <InputGroup className="search-bar d-flex align-items-center">
           <InputGroup.Text className="search-icon">
             <svg
               width="15"

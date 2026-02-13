@@ -39,3 +39,35 @@
   margin-top: -70px;
 
 }
+
+@media (max-width: 768px) {
+
+  /* Hide sidebar */
+  .manageStaff-sidebar {
+    display: none;
+  }
+
+  /* Full width dashboard */
+  .manageStaff-dashboard {
+    width: 100%;
+    padding: 12px;
+  }
+
+  /* Stack layout */
+  .manageStaff-bodyContainer {
+    flex-direction: column;
+  }
+
+  /* Make button centered on mobile */
+  .yellow-next-button {
+    left: 50%;
+    transform: translateX(-50%);
+    right: auto;
+    bottom: 15px;
+  }
+
+  .next-button {
+    width: 90vw;
+    max-width: 320px;
+  }
+}
