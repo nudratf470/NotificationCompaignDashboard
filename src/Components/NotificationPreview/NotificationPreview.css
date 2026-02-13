@@ -1,47 +1,51 @@
 .appointment-updated {
   background-color: #F8F9FE;
   max-width: 360px;
-  width: 90%; /* allow some flexibility on smaller screens */
+  width: 100%; 
   margin: auto;
   border-radius: 12px;
-  padding: 15px;
-  /* Remove fixed max-height to prevent cutting off content */
-  /* max-height: 308px; */
-  /* height: 100%; */
-  box-sizing: border-box; /* make padding included in width */
+  padding: 15px 15px 70px 15px;
+
 }
 
 .appoinment {
   background-color: white;
-  width: 100%; /* take full width of parent */
-  max-width: 328px; /* keep max width */
+  width: 100%; 
+  max-width: 328px;
   margin: 25px 0 18px 0;
   border-radius: 12px;
   padding: 15px;
   box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.08);
   border: 1px solid rgb(240, 240, 240);
   display: flex;
-  gap: 12px; /* space between icon and text */
+  gap: 12px; 
   align-items: flex-start;
   box-sizing: border-box;
 }
 
+.appointment-updated span{
+font-weight: 400;
+font-size: 12px;
+line-height: 16px;
+}
+
+
 .Bell-iconbg {
-  background-color: var(--brand-primary);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 48px;
-  height: 48px;
-  border-radius: 8px;
-  flex-shrink: 0; /* prevent shrinking on small screens */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+width: 60px!important;
+height: 40px;
+background: #155DFC;
+border-radius: 10px;
 }
 
 .appoinment h4 {
   font-size: 16px;
   font-weight: 600;
   color: var(--brand-headingColor);
-  margin: 0; /* reset margin */
+  margin: 0; 
 }
 
 .appoinment p {
@@ -49,20 +53,21 @@
   font-weight: 400;
   color: var(--brand-bodyColor);
   margin-top: 8px;
-  max-width: 100%; /* allow full width */
-  word-wrap: break-word; /* prevent overflow */
+  max-width: 100%; 
+  word-wrap: break-word; 
   line-height: 1.4;
 }
 
 .details {
   background-color: white;
   border-radius: 16px;
-  max-width: 137px;
-  width: 80%; /* more flexible */
+  display: flex;
+ justify-content: center;
+ padding: 7px;
+ max-width: 137px;
   margin: auto;
-  padding: 5px 10px;
-  box-sizing: border-box;
-  text-align: center; /* center text & icon */
+  
+  text-align: center; 
 }
 
 .details span {
@@ -72,10 +77,10 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 8px; /* space between icon and text */
+  gap: 8px; 
 }
 
-/* Responsive tweaks */
+
 @media (max-width: 480px) {
   .appointment-updated {
     max-width: 100%;
@@ -85,7 +90,7 @@
   .appoinment {
     max-width: 100%;
     padding: 12px;
-    flex-direction: row; /* keep icon and text side by side */
+    flex-direction: row; 
     gap: 10px;
   }
 

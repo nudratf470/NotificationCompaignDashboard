@@ -35,11 +35,11 @@
 }
 
 .iconbg.Blue {
-  background: linear-gradient(90deg, #C7D8FE 0%, #F0F4FF 100%);
+background: linear-gradient(135deg, rgba(21, 93, 252, 0.2) 0%, rgba(21, 93, 252, 0.05) 100%);
 }
 
 .iconbg.Green {
-  background: linear-gradient(90deg, #D1EFDC 0%, #EDF9F1 100%);
+background: linear-gradient(135deg, rgba(0, 166, 62, 0.2) 0%, rgba(0, 166, 62, 0.05) 100%);
 }
 
 .iconbg img {
@@ -49,7 +49,6 @@
 }
 
 .arrowbg {
-  background: linear-gradient(90deg, #D1EFDC 0%, #EDF9F1 100%);
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -59,6 +58,18 @@
   padding: 0 10px;
   border-radius: 8px;
   flex-shrink: 0;
+}
+
+.arrowbg.GreenBlue{
+background: rgba(16, 185, 129, 0.1)!important;
+}
+
+.arrowbg.Pink{
+background: rgba(239, 68, 68, 0.1)!important;
+}
+
+.arrowbg.Pink span{
+  color:#EF4444;
 }
 
 .arrowbg img {
@@ -75,15 +86,14 @@
 }
 
 .paragraphText {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.4;
-  color: #4A5565;
-  margin: 0;
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+color: #6B7280;
 }
 
 .iconbgPink {
-  background: linear-gradient(to right, #FCDDDD 0%, #FFFAFA 100%);
+background: linear-gradient(135deg, rgba(239, 68, 68, 0.2) 0%, rgba(239, 68, 68, 0.05) 100%);
 }
 
 .iconbgPink span {
@@ -91,13 +101,13 @@
 }
 
 .iconbgPurple {
-  background: linear-gradient(to right, #ECD2FF 0%, #F8EFFF 100%) !important;
+background: linear-gradient(135deg, rgba(152, 16, 250, 0.2) 0%, rgba(152, 16, 250, 0.05) 100%);
 }
 
 .arrowbg span {
   color: var(--brand-green);
-  font-weight: 600;
-  font-size: 12px;
+  font-weight: normal!important;
+  font-size: 14px!important;
   white-space: nowrap;
 }
 

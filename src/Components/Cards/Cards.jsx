@@ -21,13 +21,13 @@ const Cards = () => {
                 <div className="iconbg Blue">
                   <img src={send} alt="Send icon" />
                 </div> 
-                <div className='arrowbg'>
+                <div className='arrowbg GreenBlue'>
                   <img src={zigzagarrow} alt="Trend arrow" />
                   <span>12.5%</span>
                 </div>
               </div>
               <h3 className="notificationNumber me-auto">2,156</h3>
-              <h6 className="paragraphText me-auto" style={{color: "var(--brand-gray)"}}>
+              <h6 className="paragraphText me-auto">
                 Total Campaigns Sent
               </h6>
             </Card>
@@ -39,13 +39,13 @@ const Cards = () => {
                 <div className="iconbg Green">
                   <img src={delivered} alt="Delivered icon" />
                 </div> 
-                <div className='arrowbg'>
+                <div className='arrowbg GreenBlue'>
                   <img src={zigzagarrow} alt="Trend arrow" />
                   <span>99.9%</span>
                 </div>
               </div>
               <h3 className="notificationNumber me-auto">2,143</h3>
-              <h6 className="paragraphText me-auto" style={{color: "var(--brand-gray)"}}>
+              <h6 className="paragraphText me-auto">
                 Total Delivered
               </h6>
             </Card>
@@ -57,13 +57,13 @@ const Cards = () => {
                 <div className="iconbg iconbgPurple">
                   <img src={open} alt="Open icon" />
                 </div> 
-                <div className='arrowbg'>
+                <div className='arrowbg GreenBlue'>
                   <img src={zigzagarrow} alt="Trend arrow" />
                   <span>92.7%</span>
                 </div>
               </div>
               <h3 className="notificationNumber me-auto">1,987</h3>
-              <h6 className="paragraphText me-auto" style={{color: "var(--brand-gray)"}}>
+              <h6 className="paragraphText me-auto">
                 Avg. Open Rate
               </h6>
             </Card>
@@ -75,13 +75,13 @@ const Cards = () => {
                 <div className="iconbg iconbgPink">
                   <img src={linearrow} alt="Click icon" />
                 </div> 
-                <div className='arrowbg iconbgPink'>
+                <div className='arrowbg Pink'>
                   <img src={reversezigzag} alt="Trend arrow" />
                   <span>72.1%</span>
                 </div>
               </div>
               <h3 className="notificationNumber me-auto">2,143</h3>
-              <h6 className="paragraphText me-auto" style={{color: "var(--brand-gray)"}}>
+              <h6 className="paragraphText me-auto">
                 Avg. Click Rate
               </h6>
             </Card>

@@ -6,6 +6,7 @@
     display: inline-flex; 
     align-items: center; 
     justify-content: center;
+    margin-left: -2px!important;
 }
 
 .yellowButton{
@@ -20,7 +21,6 @@
     font-size: 14px;
     font-weight: 500 !important;
 }
-
 
 .plusIcon{
     width: 16px;
@@ -40,6 +40,41 @@ font-size: 18px !important;
 font-weight: 500;
 }
 
+.top-bar {
+  background-color: white;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.08);
+  min-height: 51px;
+  padding: 6px 10px;
+}
+
+.topbar-heading {
+  color: #404145;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+
+@media (max-width: 576px) {
+
+  .topbar-heading {
+    font-size: 15px;
+  }
+
+  .yellowButton {
+    height: 34px !important;
+    padding: 0 10px !important;
+  }
+
+  .btn-text {
+    display: none;   
+  }
+
+  .moon-icon {
+    width: 28px;
+    height: 28px;
+  }
+
+}
 
 
 

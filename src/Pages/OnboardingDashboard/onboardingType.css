@@ -3,13 +3,12 @@
   min-height: 100vh;
 }
 
-/* Main layout */
 .bodyContainer {
   display: flex;
   width: 100%;
+  padding-bottom: 100px;
 }
 
-/* Sidebar (desktop unchanged) */
 .sidebar {
   width: 41px;
   flex-shrink: 0;
@@ -18,23 +17,22 @@
 .bodyContent {
   flex: 1;
   padding: 0 10px;
-  min-width: 0;        /* REQUIRED */
-  max-width: 100%;     /* REQUIRED */
-  overflow-x: hidden;  /* REQUIRED */
+  min-width: 0;        
+  max-width: 100%;     
+  overflow-x: hidden;  
 }
 
 
 /* ---------- RESPONSIVE ---------- */
 
-/* Tablets & below */
 @media (max-width: 991px) {
   .bodyContainer {
-    flex-direction: column; /* stack layout */
+    flex-direction: column; 
   }
 
   .sidebar {
     width: 100%;
-    display: none; /* usually hidden on mobile */
+    display: none; 
   }
 
   .bodyContent {
@@ -42,7 +40,7 @@
   }
 }
 
-/* Mobile */
+
 @media (max-width: 575px) {
   .bodyContent {
     padding: 0 10px;
