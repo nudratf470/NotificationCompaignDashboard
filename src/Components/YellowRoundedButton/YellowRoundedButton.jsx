@@ -2,9 +2,9 @@ import React from 'react';
 import { Button } from 'react-bootstrap';
 import './YellowRoundedButton.css';  // make sure extension is correct
 
-const YellowRoundedButton = ({ label }) => {
+const YellowRoundedButton = ({ label,onClick }) => {
   return (
-    <Button className='yellowRoundedButton'>{label}</Button>
+    <Button type="button" className='yellowRoundedButton' onClick={onClick}>{label}</Button>
   );
 }
 

@@ -2,11 +2,9 @@ import React from "react";
 import Header from "../../Components/Header/Header";
 import UpdatedAppointmentTopBar from "../../Components/UpdatedAppointmentTopBar/UpdatedAppointmentTopBar";
 import AppointmentSideBar from "../../Components/AppointmentSideBar/AppointmentSideBar";
-import ComponentsSidebar from "../../Components/ComponentsSidebar/ComponentsSidebar";
-import PropertiesSidebar from "../../Components/Propertiessidebar/Propertiessidebar";
-import NotificationEditor from "../../Components/NotificationEditor/NotificationEditior";
 import "./SlotUpdatedAppointmentPage.css";
 import AppointmentUpdatedSchedule from "../../Components/AppointmentUpdatedSchedule/AppointmentUpdatedSchedule";
+import ModifyDelete from "../../Components/ModifyDelete/ModifyDelete";
 
 const SlotUpdatedAppointmentPage = () => {
   return (
@@ -63,7 +61,7 @@ const SlotUpdatedAppointmentPage = () => {
 
         {/* Right sidebar */}
         <div className="properties-sidebar-wrapper mt-3">
-          <PropertiesSidebar />
+          <ModifyDelete />
         </div>
       </div>
     </div>

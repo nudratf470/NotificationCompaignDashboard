@@ -6,8 +6,10 @@ import ComponentsSidebar from "../../Components/ComponentsSidebar/ComponentsSide
 import NotificationEditor from "../../Components/NotificationEditor/NotificationEditior";
 import YellowRoundedButton from "../../Components/YellowRoundedButton/YellowRoundedButton";
 import "./SlotNotificationPage.css";
+import { useNavigate } from "react-router-dom";
 
 const SlotNotificationPage = () => {
+const navigate=useNavigate();
   return (
     <div className="update-appointment-page">
       <Header />
@@ -116,7 +118,7 @@ const SlotNotificationPage = () => {
 
         {/* NEXT BUTTON */}
         <div className="sidebar-wrapper mt-3">
-          <YellowRoundedButton label="Next" />
+          <YellowRoundedButton label="Next" onClick={() => navigate("/slot-updated")}  />
         </div>
       </div>
     </div>

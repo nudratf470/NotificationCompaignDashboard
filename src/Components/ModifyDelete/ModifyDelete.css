@@ -1,0 +1,38 @@
+/* Container for the Next button */
+.md-nextButtonContainer {
+  width: 100%;
+  max-width: 237px;
+  height: 66px;
+  background: #f9f9ff;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 8px;
+}
+
+/* Preview options container */
+.md-previewOptions {
+  width: 100%;
+  max-width: 237px;
+  background: #f9f9ff;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 19px 24px;
+}
+
+/* Individual option rows (Modify / Delete) */
+.md-optionIcons {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.md-optionIcons span {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #494949;
+}

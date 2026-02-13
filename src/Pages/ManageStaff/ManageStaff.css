@@ -1,5 +1,6 @@
 .manageStaff {
   background-color: #EBECF7 !important;
+  padding-bottom: 70px;
 }
 
 .manageStaff-bodyContainer {
@@ -15,4 +16,26 @@
 .manageStaff-dashboard {
   margin: 0;
   flex: 1;
+}
+.next-button {
+  max-width: 300px;
+  width: 100%;
+  border: none!important;
+  background: #FFD705;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 29px;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.yellow-next-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -70px;
+
 }

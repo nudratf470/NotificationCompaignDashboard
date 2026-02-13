@@ -1,12 +1,19 @@
 import React, { useState } from "react";
 import YellowRoundedButton from "../YellowRoundedButton/YellowRoundedButton";
+import { useNavigate } from "react-router-dom";
 import "./PropertiesSidebar.css";
 
 const PropertiesSidebar = () => {
+  const navigate = useNavigate();
   return (
     <>
       <div className="nextbtnContainer">
-        <YellowRoundedButton label="Next" className="myButton" />
+        <YellowRoundedButton
+  label="Next"
+  className="myButton"
+  onClick={() => navigate("/slot-notification")}   
+/>
+
       </div>
       <div className="previewOptions mt-2">
         <div className="option-icons">

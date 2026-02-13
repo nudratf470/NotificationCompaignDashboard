@@ -1,8 +1,10 @@
 import React from "react";
+import { useState } from "react";
 import { Table } from "react-bootstrap";
 import "./DashboardStatus.css";
 
-const DashboardStatus = () => {
+const DashboardStatus = ({ selectedId, setSelectedId }) => {
+ 
   const notifications = [
     {
       id: 1,
@@ -95,16 +97,35 @@ const DashboardStatus = () => {
         <tbody>
           {notifications.map((notification) => (
             <tr key={notification.id}>
-              <td className="checkbox-cell">
-                <svg
-                  width="14"
-                  height="14"
-                  viewBox="0 0 14 14"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <rect width="14" height="14" rx="7" fill="#EBECF7" />
-                </svg>
+              <td className="checkbox-cell"
+                onClick={() => setSelectedId(notification.id)}
+                style={{ cursor: "pointer" }}
+              >
+                {selectedId === notification.id ? (
+                  // Selected state: yellow outline + yellow center
+                  <svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 14 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect width="14" height="14" rx="7" fill="#EBECF7" />
+                    <rect x="0.5" y="0.5" width="13" height="13" rx="6.5" fill="white" stroke="#FFD705" />
+                    <rect x="4" y="4" width="6" height="6" rx="3" fill="#FFD705" />
+                  </svg>
+                ) : (
+                  // Default state: grey circle
+                  <svg width="14" height="14" viewBox="0 0 14 14">
+                    <rect
+                      width="14"
+                      height="14"
+                      rx="7"
+                      fill="#EBECF7"
+                      stroke="none"
+                    />
+                  </svg>
+                )}
               </td>
               <td className="name-cell">{notification.name}</td>
               <td className="trigger-type-cell">{notification.triggerType}</td>

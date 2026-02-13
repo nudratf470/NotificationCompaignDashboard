@@ -11,12 +11,9 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        {/* Default route - redirects to notifications */}
-        <Route path="/" element={<Navigate to="/notifications" replace />} />
-        
-        {/* All your pages */}
+   
       {/*  <Route path="/notifications" element={<NotificationCard />} />*/}
-        <Route path="/onboarding" element={<OnboardingType />} />
+        <Route path="/" element={<OnboardingType />} />
         <Route path="/manage-staff" element={<ManageStaff />} />
         <Route path="/update-appointment" element={<UpdateAppointmentPage />} />
         <Route path="/slot-notification" element={<SlotNotificationPage />} />
