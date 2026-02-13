@@ -10,10 +10,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        {/* Default route */}
         <Route path="/" element={<Navigate to="/onboarding" replace />} />
-
-        {/* Pages */}
         <Route path="/onboarding" element={<OnboardingType />} />
         <Route path="/manage-staff" element={<ManageStaff />} />
         <Route path="/update-appointment" element={<UpdateAppointmentPage />} />
