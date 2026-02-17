@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import YellowRoundedButton from "../YellowRoundedButton/YellowRoundedButton";
 import { useNavigate } from "react-router-dom";
-import "./PropertiesSidebar.css";
+import "./PropertiesSideBar.css";
 
-const PropertiesSidebar = () => {
+const PropertiesSideBar = () => {
   const navigate = useNavigate();
   return (
     <>
@@ -86,4 +86,4 @@ const PropertiesSidebar = () => {
   );
 };
 
-export default PropertiesSidebar;
+export default PropertiesSideBar;
