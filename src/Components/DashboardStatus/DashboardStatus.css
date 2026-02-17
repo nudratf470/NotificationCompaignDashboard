@@ -2,7 +2,7 @@
 .notifications-table-container {
   background: #fff;
   border-radius: 12px;
-  margin: 15px 25px 15px 34px;
+  margin: 15px 20px 15px 25px;
   overflow-x: auto; 
   padding-bottom: 20px !important;
   -webkit-overflow-scrolling: touch;
@@ -55,7 +55,6 @@ font-weight: bold!important;
 font-size: 12px;
 color: #494949;
 font-family: 'Roboto', sans-serif;
-
 
 }
 
@@ -202,20 +201,22 @@ color: #494949!important;
   flex-shrink: 0;
 }
 
-/* ================= RESPONSIVE ================= */
+/* ================= BASE CLEANUP (SAFE — NO DESKTOP CHANGE) ================= */
 
-/* Large tablets and below */
-@media (max-width: 1200px) {
-  .notifications-table-container {
-    margin: 15px 16px;
-  }
-
-  .notifications-table {
-    min-width: 950px;
-  }
+/* Fonts inherit — no need to repeat everywhere */
+.notifications-table th,
+.notifications-table td {
+  font-family: 'Roboto', sans-serif;
 }
 
-/* Tablets */
+/* Fix typo */
+.channels-cell {
+  white-space: nowrap;
+}
+
+/* ================= RESPONSIVE ================= */
+
+/* -------- Tablets & below (keep layout same, just tighten spacing) -------- */
 @media (max-width: 992px) {
   .notifications-table-container {
     margin: 12px;
@@ -223,21 +224,16 @@ color: #494949!important;
   }
 
   .notifications-table {
-    min-width: 900px;
+    min-width: 900px; /* keep horizontal scroll like desktop */
   }
 
   .notifications-table th,
   .notifications-table td {
-    padding: 14px 12px;
-  }
-
-  .notifications-table th:nth-child(1),
-  .notifications-table td:nth-child(1) {
-    padding-left: 16px;
+    padding: 12px 10px;
   }
 }
 
-/* Mobile landscape */
+/* -------- Mobile Landscape -------- */
 @media (max-width: 768px) {
   .notifications-table-container {
     margin: 10px;
@@ -245,26 +241,21 @@ color: #494949!important;
   }
 
   .notifications-table {
-    min-width: 800px;
+    min-width: 780px;
   }
 
   .notifications-table th,
   .notifications-table td {
-    padding: 12px 10px;
+    padding: 10px 8px;
     font-size: 12px;
   }
 
   .notifications-table thead th {
     font-size: 11px;
   }
-
-  .notifications-table th:nth-child(1),
-  .notifications-table td:nth-child(1) {
-    padding-left: 12px;
-  }
 }
 
-/* Mobile portrait */
+/* -------- Mobile Portrait -------- */
 @media (max-width: 576px) {
   .notifications-table-container {
     margin: 8px;
@@ -272,12 +263,12 @@ color: #494949!important;
   }
 
   .notifications-table {
-    min-width: 750px;
+    min-width: 720px;
   }
 
   .notifications-table th,
   .notifications-table td {
-    padding: 10px 8px;
+    padding: 8px 6px;
     font-size: 11px;
   }
 
@@ -296,7 +287,7 @@ color: #494949!important;
   }
 
   .status-badge svg {
-    width: 7px;
-    height: 7px;
+    width: 6px;
+    height: 6px;
   }
 }

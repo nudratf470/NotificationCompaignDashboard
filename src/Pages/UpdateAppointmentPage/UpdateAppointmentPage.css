@@ -21,13 +21,14 @@
 /* ---------- Components Sidebar (Left Wide) ---------- */
 .components-sidebar-wrapper {
   flex-shrink: 0;
+  margin-left: 10px!important;
 }
 
 /* ---------- Main Dashboard Area ---------- */
 .dashboard-status {
   flex: 1;
   background-color: #EBECF7;
-  padding: 12px 8px 0 8px;
+  padding: 12px 12px 0 12px;
 }
 
 /* ---------- Center Content Wrapper ---------- */

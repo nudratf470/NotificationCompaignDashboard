@@ -1,5 +1,5 @@
 .statusSidebarMenu {
-  width: 51px !important;
+  width: 47px !important;
   display: flex;
   justify-content: center;
   height: 100vh;
@@ -10,8 +10,7 @@
   padding: 26px 0;
   width: 100%;
   border: 2px solid var(--brand-yellow);
-  border-left: none;
-  border-radius: 0 8px 0 8px;
+  border-radius: 8px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -46,8 +45,7 @@
 
 .statusSidebar-link.active .statusSidebar-icon-wrap {
   background: var(--brand-yellow)!important;
-  border-radius: 7px 0 0 7px;
-  width: 44px;
+  border-radius: 5px 0 0 5px;
   height: 34px;
   margin-right: 0;
   margin-left: auto; 

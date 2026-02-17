@@ -8,7 +8,7 @@ const TemplateListTopBar = () => {
   return (
     <Row className="top-bar align-items-center mx-0">
       <Col className="d-flex align-items-center gap-4">
-        <div className="moon-icon">
+        <div className="moonIcon">
           <img src={moon} alt="moon" />
         </div>
         <h3 className="mb-0 TemplateTopbar-heading">Template list</h3>

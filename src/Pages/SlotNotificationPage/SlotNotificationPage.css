@@ -3,18 +3,22 @@
   background-color: #ebecf7;
 }
 
-/* Main body layout */
+
 .bodyContainer {
   display: flex;
-  gap: 12px;
-  align-items: flex-start;
+  gap: 0;   
+  margin: 0 !important;
+  padding: 0 !important;
 }
+
 
 /* Left narrow sidebar */
 .status-sidebar {
-  max-width: 60px;
-  width: 100%;
+   max-width: 47px!important; 
+  width: 47px !important;
   flex-shrink: 0;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 /* Template label */
@@ -49,7 +53,7 @@
 .bodylabelContainer {
   max-width: 352px;
   width: 100%;
-  margin: 0 0 0 20px;
+  margin: 0 0 0 0; /* Removed left margin */
 }
 
 /* Second column */
@@ -138,6 +142,19 @@
   .sidebar-wrapper {
     width: calc(100% - 20px);
     margin: 10px;
+  }
+
+  /* Make button centered on mobile */
+  .yellow-next-button {
+    left: 50%;
+    transform: translateX(-50%);
+    right: auto;
+    bottom: 15px;
+  }
+
+  .next-button {
+    width: 90vw;
+    max-width: 320px;
   }
 }
 
