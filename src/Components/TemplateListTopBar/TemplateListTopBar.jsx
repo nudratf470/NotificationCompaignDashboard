@@ -11,7 +11,7 @@ const TemplateListTopBar = () => {
         <div className="moonIcon">
           <img src={moon} alt="moon" />
         </div>
-        <h3 className="mb-0 TemplateTopbar-heading">Template list</h3>
+        <h3 className="mb-0 TemplateTopbar-Heading">Template list</h3>
       
         <InputGroup className="search-bar d-flex align-items-center">
           <InputGroup.Text className="search-icon">

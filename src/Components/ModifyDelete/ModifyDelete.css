@@ -1,7 +1,7 @@
 /* Container for the Next button */
 .md-nextButtonContainer {
-  width: 100%;
-  max-width: 237px;
+  
+  width: 237px;
   height: 66px;
   background: #f9f9ff;
   border-radius: 12px;
@@ -13,8 +13,8 @@
 
 /* Preview options container */
 .md-previewOptions {
-  width: 100%;
-  max-width: 237px;
+ 
+  width: 237px;
   background: #f9f9ff;
   border-radius: 12px;
   display: flex;
@@ -36,3 +36,29 @@
   line-height: 16px;
   color: #494949;
 }
+
+@media (max-width: 768px) {
+  .md-nextButtonContainer,
+  .md-previewOptions {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 16px;
+    box-sizing: border-box;
+  }
+
+    .md-nextButtonContainer {
+    display: flex;
+  }
+
+  .md-nextButtonContainer > * {
+    width: 100% !important;
+  }
+
+  .md-myButton {
+    width: 100% !important;
+  }
+}
+
+
+

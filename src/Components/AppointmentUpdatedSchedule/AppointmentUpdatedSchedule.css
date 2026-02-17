@@ -142,10 +142,7 @@
 }
 
 @media (max-width: 576px) {
-  .AppointmentupdatedSchedule {
-    padding: 20px 15px 15px;
-    max-width: 95%;
-  }
+
 
   .updatedTiming {
     flex-direction: column; 

@@ -1,13 +1,12 @@
 .components-sidebar {
-  max-width: 237px;
-  width: 100%;
+
   background: #F9F9FF;
   border: 0.5px solid #DCDCDC;
   padding: 8px 8px 0 8px;
   display: flex;
   flex-direction: column;
   gap: 4px;
-  height: calc(100vh - 120px);
+height: 487px;
   border-radius: 12px;
 }
 
@@ -68,49 +67,9 @@
   display: block;
 }
 
-/* Responsive */
+
 @media (max-width: 992px) {
-  .components-sidebar {
-    width: 200px;
-    padding: 12px 10px;
-  }
-
-  .component-item {
-    padding: 8px 10px;
-    gap: 8px;
-  }
-
-  .component-label {
-    font-size: 12px;
-  }
-
-  .add-btn {
-    width: 22px;
-    height: 22px;
-  }
-
-  .add-btn svg {
-    width: 12px;
-    height: 12px;
-  }
-}
-
-@media (max-width: 768px) {
-  .components-sidebar {
-    width: 60px;
-    padding: 12px 8px;
-  }
-
-  .component-label {
-    display: none;
-  }
-
-  .component-item {
-    justify-content: center;
-    padding: 10px;
-  }
-
-  .add-btn {
-    display: none;
-  }
+.components-sidebar {
+height: auto;
+ }
 }

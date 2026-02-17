@@ -5,40 +5,53 @@
 }
 
 /* ---------- Main Body Layout ---------- */
-.bodyContainer {
+.body-container {
   display: flex;
-
+  gap: 0;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  align-items: stretch;
 }
 
 /* ---------- Left Narrow Sidebar ---------- */
 .status-sidebar {
-  width: 60px;
-  flex-shrink: 0;
+  width: 47px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
-/* ---------- Components Sidebar (Left Wide) ---------- */
-.components-sidebar-wrapper {
-  flex-shrink: 0;
-  margin-left: 10px!important;
+/* ---------- Components Sidebar Wrapper ---------- */
+.ComponentsSidebar {
+  margin-top: 20px;
+  margin-left: 20px !important;
+  
+}
+
+/* ---------- Properties Sidebar Wrapper ---------- */
+.properties-sidebar {
+  margin-top: 20px;
+  margin-right: 20px;
 }
 
 /* ---------- Main Dashboard Area ---------- */
 .dashboard-status {
   flex: 1;
   background-color: #EBECF7;
-  padding: 12px 12px 0 12px;
+  padding: 12px;
 }
 
-/* ---------- Center Content Wrapper ---------- */
+/* ---------- Content Wrapper ---------- */
 .content-wrapper {
-  max-width: 100%;
-  margin: 0;
-  padding: 0 16px;
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 24px;   /* Desktop gap (unchanged) */
+  max-width: 100%;
+  padding: 0 16px;
+  margin: 0;
 }
 
 /* ---------- Notification Label ---------- */
@@ -69,142 +82,80 @@
   line-height: 1.2;
 }
 
-/* ---------- Right Sidebar ---------- */
-.properties-sidebar-wrapper {
-  flex-shrink: 0;
+/* ---------------- Tablet ---------------- */
+@media (max-width: 992px) {
+
+  
+  .properties-sidebar {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 16px;
+    box-sizing: border-box;
+    
+  }
+  .ComponentsSidebar{
+    margin-left: -1px!important;
+   
+    
+    
+    box-sizing: border-box;
+  }
+
+  .properties-sidebar {
+    height: auto;
+  }
+
+  .nextbtnContainer,
+  .previewOptions {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+ 
+    box-sizing: border-box;
+    gap: 12px;
+  }
+
+  /* Reduce appointment card gap slightly on tablet */
+  .content-wrapper {
+    gap: 18px;
+  }
+
+  .dashboard-status{
+    margin-top:-20px!important;
+    margin-bottom: -15px!important;
+  }
 }
 
-/* ---------- Responsive Styles ---------- */
-@media (max-width: 992px) {
-  .dashboard-status {
-    padding: 12px;
-  }
+/* ---------------- Mobile ---------------- */
+@media (max-width: 768px) {
 
-  .content-wrapper {
-    padding: 0 8px;
-  }
-
-  .components-sidebar {
-    width: 200px;
-    padding: 12px 10px;
-  }
-
-  .component-item {
-    padding: 8px 10px;
+  .body-container {
+    flex-direction: column;
     gap: 8px;
   }
 
-  .component-label {
-    font-size: 12px;
-  }
-
-  .add-btn {
-    width: 22px;
-    height: 22px;
-  }
-
-  .add-btn svg {
-    width: 12px;
-    height: 12px;
-  }
-}
-
-@media (max-width: 768px) {
-  /* Stack everything vertically */
-  .bodyContainer {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-  }
-
-  /* Status Sidebar */
   .status-sidebar {
-    width: 100%;
-    order: 1;
-    display: flex;
-    justify-content: flex-start;
-    padding: 8px 0;
-  }
-
-  /* Main Dashboard */
-  .dashboard-status {
-    order: 2;
-    width: 100%;
-    padding: 12px 8px;
-  }
-
-  /* Combine Components + Properties Sidebar below dashboard */
-  .components-sidebar-wrapper,
-  .properties-sidebar-wrapper {
-    order: 3;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    padding: 0 8px;
-  }
-
-  /* Components Sidebar adjustments */
-  .components-sidebar {
-    width: 100%;
-    max-width: none;
-    height: auto;
-    flex-direction: row;
-    overflow-x: auto;
-    border-radius: 12px;
-    padding: 8px;
-  }
-
-  .component-item {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 8px;
-    min-width: 60px;
-  }
-
-  .component-label {
-    display: none; /* hide labels for compact view */
-  }
-
-  .add-btn {
     display: none;
   }
 
-  /* Properties Sidebar adjustments */
-  .nextbtnContainer,
-  .previewOptions {
-    max-width: 100%;
+  .ComponentsSidebar,
+  .properties-sidebar,
+  .dashboard-status {
     width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 16px;
+    box-sizing: border-box;
+  }
+
+  .properties-sidebar {
     height: auto;
-    padding: 12px;
   }
 
-  .option-icons {
-    justify-content: flex-start;
-    gap: 8px;
-  }
-}
-
-@media (max-width: 576px) {
-  /* Further compact adjustments for very small screens */
-  .component-item {
-    min-width: 50px;
-    padding: 6px;
-  }
-
-  .components-sidebar {
-    padding: 6px;
-  }
-
+  /* Reduce appointment card gap more on mobile */
   .content-wrapper {
-    padding: 0 4px;
-    gap: 16px;
-  }
-
-  .notification-label {
-    padding: 6px 8px;
-    gap: 4px;
-    height: 45px;
+    gap: 14px;
+    padding: 0;
   }
 }

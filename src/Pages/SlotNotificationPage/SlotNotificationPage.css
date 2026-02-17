@@ -3,22 +3,20 @@
   background-color: #ebecf7;
 }
 
-
-.bodyContainer {
+/* Main layout */
+.slot-body {
   display: flex;
-  gap: 0;   
-  margin: 0 !important;
-  padding: 0 !important;
+  gap: 0;
+  margin: 0;
+  padding: 0;
 }
 
-
 /* Left narrow sidebar */
-.status-sidebar {
-   max-width: 47px!important; 
-  width: 47px !important;
+.slot-status-sidebar {
+  width: 47px;
   flex-shrink: 0;
-  margin: 0 !important;
-  padding: 0 !important;
+  margin: 0;
+  padding: 0;
 }
 
 /* Template label */
@@ -27,12 +25,14 @@
   flex-direction: column;
   gap: 9px;
   justify-content: center;
-  padding-left: 15px;
   background: #f9f9ff;
   border-radius: 12px;
   height: 63px;
   max-width: 237px;
   width: 100%;
+  margin:20px 24px;
+  margin-left: 10px;
+  padding-left: 20px;
 }
 
 .label-name {
@@ -53,14 +53,21 @@
 .bodylabelContainer {
   max-width: 352px;
   width: 100%;
-  margin: 0 0 0 0; /* Removed left margin */
+  margin: 20px 14px 20px 0px;
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+  
 }
 
 /* Second column */
 .bodylabelContainertwo {
   max-width: 393px;
   width: 100%;
-  margin-right: 20px;
+  margin: 20px 14px 20px 0px;
+  display: flex;
+  flex-direction: column;
+  gap:10px;
 }
 
 /* Body labels */
@@ -98,7 +105,7 @@
 }
 
 /* Next button wrapper */
-.sidebar-wrapper {
+.Button-wrapper {
   background: #f9f9ff;
   border-radius: 12px;
   display: flex;
@@ -106,12 +113,11 @@
   justify-content: center;
   height: 66px;
   padding: 15px;
-  margin-right: 25px;
+  margin: 20px 25px 20px 10px;
+
 }
 
-/* ---------- Responsive ---------- */
-
-/* Tablets */
+/* ---------- Tablet ---------- */
 @media (max-width: 1024px) {
   .labels-container,
   .bodylabelContainer,
@@ -120,36 +126,26 @@
   }
 }
 
-/* Tablets & phones */
+/* ---------- Mobile ---------- */
 @media (max-width: 768px) {
-  .bodyContainer {
+  .slot-body {
     flex-direction: column;
   }
 
-  .status-sidebar {
-    max-width: 100%;
+
+
+  .slot-status-sidebar {
+    width: 100%;
     display: flex;
     justify-content: center;
   }
 
   .labels-container,
   .bodylabelContainer,
-  .bodylabelContainertwo {
-    width: calc(100% - 20px);
-    margin: 10px;
-  }
-
+  .bodylabelContainertwo,
   .sidebar-wrapper {
     width: calc(100% - 20px);
     margin: 10px;
-  }
-
-  /* Make button centered on mobile */
-  .yellow-next-button {
-    left: 50%;
-    transform: translateX(-50%);
-    right: auto;
-    bottom: 15px;
   }
 
   .next-button {
@@ -158,7 +154,7 @@
   }
 }
 
-/* Small phones */
+/* ---------- Small phones ---------- */
 @media (max-width: 480px) {
   .label-title,
   .Body-label-title {
@@ -177,5 +173,8 @@
 
   .dropdown-icon {
     margin-left: 8px;
+  }
+  .Button-wrapper{
+    margin-right: 10px;
   }
 }

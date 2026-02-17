@@ -1,13 +1,13 @@
 /* Top Bar */
-.top-bar {
+.uatb-top-bar {
   background-color: white;
   box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.08) !important;
   height: 51px !important;
-  padding: 0px;
+  padding: 0;
 }
 
 /* Moon Icon */
-.moon-icon {
+.uatb-moonicon {
   background-color: var(--brand-lightGray);
   border-radius: 8px;
   width: 33px;
@@ -15,26 +15,28 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  margin-left: -2px;
 }
 
 /* Heading */
-.TemplateTopbar-heading {
-  font-weight: 500;
+.uatb-heading {
+  font-weight: 500 !important;
   font-size: 18px;
   line-height: 19px;
   color: #404145;
 }
 
-/* View Toggle (Mobile/Desktop) */
-.view-toggle {
+/* View Toggle */
+.uatb-view-toggle {
   display: inline-flex;
   background: #F7F7F7;
   border-radius: 8px;
   padding: 4px;
   gap: 2px;
+  justify-content: center;
 }
 
-.toggle-btn {
+.uatb-toggle-btn {
   display: flex;
   align-items: center;
   gap: 6px;
@@ -50,22 +52,20 @@
   white-space: nowrap;
 }
 
-.toggle-btn svg {
-  flex-shrink: 0;
-}
+.uatb-toggle-btn svg { flex-shrink: 0; }
 
-.toggle-btn.active {
+.uatb-toggle-btn.active {
   background: #FFFFFF;
   color: #1B1B1B;
   font-weight: 400;
 }
 
-.toggle-btn:hover:not(.active) {
+.uatb-toggle-btn:hover:not(.active) {
   color: #6B6B6B;
 }
 
 /* Changes Saved Text */
-.changes-saved-text {
+.uatb-changes-saved-text {
   font-size: 14px;
   font-weight: 400;
   color: #6A6A6C;
@@ -73,12 +73,12 @@
   margin-right: 10px;
 }
 
-
-.action-btn {
+/* Action Buttons (Undo/Redo) */
+.uatb-action-btn {
   width: 32px;
   height: 32px;
   background: #FFFFFF;
-  border: none!important;
+  border: none !important;
   border-radius: 6px;
   display: flex;
   align-items: center;
@@ -86,98 +86,35 @@
   cursor: pointer;
   transition: all 0.2s ease;
   padding: 0;
-  gap:1px;
+  gap: 1px;
 }
 
-
-.action-btn svg {
-  display: block;
-}
-
-
-
+.uatb-action-btn svg { display: block; }
 
 /* Responsive */
 @media (max-width: 992px) {
-  .top-bar {
-    padding: 0 20px;
-  }
-
-  .TemplateTopbar-heading {
-    font-size: 15px;
-  }
-
-  .toggle-btn {
-    padding: 5px 10px;
-    font-size: 12px;
-    gap: 5px;
-  }
-
-  .toggle-btn svg {
-    width: 12px;
-    height: 12px;
-  }
-
-  .changes-saved-text {
-    font-size: 12px;
-  }
-
-  .action-btn {
-    width: 30px;
-    height: 30px;
-  }
-
-  .action-btn svg {
-    width: 14px;
-    height: 14px;
-  }
+  .uatb-top-bar { padding: 0 20px; }
+  .uatb-heading { font-size: 15px; }
+  .uatb-toggle-btn { padding: 5px 10px; font-size: 12px; gap: 5px; }
+  .uatb-toggle-btn svg { width: 12px; height: 12px; }
+  .uatb-changes-saved-text { font-size: 12px; }
+  .uatb-action-btn { width: 30px; height: 30px; }
+  .uatb-action-btn svg { width: 14px; height: 14px; }
+  .uatb-moonicon { margin-left: -14px; }
 }
 
 @media (max-width: 768px) {
-  .top-bar {
-    height: auto !important;
-    padding: 12px 16px;
-  }
-
-  .TemplateTopbar-heading {
-    display: none;
-  }
-
-  .view-toggle {
-    padding: 3px;
-  }
-
-  .toggle-btn {
-    padding: 4px 8px;
-    font-size: 11px;
-  }
-
-  .changes-saved-text {
-    display: none;
-  }
+  .uatb-top-bar { height: auto !important; padding: 12px 16px; }
+  .uatb-heading { display: none; }
+  .uatb-view-toggle { padding: 3px; }
+  .uatb-toggle-btn { padding: 4px 8px; font-size: 11px; }
+  .uatb-changes-saved-text { display: none; }
 }
 
 @media (max-width: 576px) {
-  .top-bar {
-    padding: 10px 12px;
-  }
-
-  .moon-icon {
-    width: 30px;
-    height: 30px;
-  }
-
-  .moon-icon img {
-    width: 16px;
-    height: 16px;
-  }
-
-  .toggle-btn {
-    padding: 4px 6px;
-  }
-
-  .action-btn {
-    width: 28px;
-    height: 28px;
-  }
+  .uatb-top-bar { padding: 10px 12px; }
+  .uatb-moonicon { width: 30px; height: 30px; }
+  .uatb-moonicon img { width: 16px; height: 16px; }
+  .uatb-toggle-btn { padding: 4px 6px; }
+  .uatb-action-btn { width: 28px; height: 28px; }
 }

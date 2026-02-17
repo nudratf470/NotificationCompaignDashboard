@@ -73,37 +73,15 @@
   background: #FFE87C;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
-  .statusSidebar-icon-wrap {
-    height: 30px;
-    width: 30px;
-  }
-
-  .statusSidebar-link.active .statusSidebar-icon-wrap.cart {
-    width: 34px;
-    height: 30px;
-  }
-
-  .statusSidebar-icon {
-    width: 18px;
-    height: 18px;
+.appointmentSidebarMenu{
+display: none;
   }
 }
 
 @media (max-width: 576px) {
-  .statusSidebar-icon-wrap {
-    height: 28px;
-    width: 28px;
+ .appointmentSidebarMenu{
+display: none;
   }
-
-  .statusSidebar-link.active .statusSidebar-icon-wrap.cart {
-    width: 32px;
-    height: 28px;
-  }
-
-  .statusSidebar-icon {
-    width: 16px;
-    height: 16px;
-  }
+ 
 }

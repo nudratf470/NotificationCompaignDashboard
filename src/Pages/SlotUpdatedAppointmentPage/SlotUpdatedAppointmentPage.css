@@ -1,38 +1,38 @@
 /* Page background */
-.update-appointment-page {
+.slot-update-page {
   background-color: #EBECF7;
 }
 
 /* Main body layout */
-.bodyContainer {
+.slot-bodyContainer {
   display: flex;
   gap: 12px;
   align-items: flex-start;
 }
 
 /* Left narrow sidebar */
-.status-sidebar {
+.slot-status-sidebar {
   max-width: 60px;
   width: 100%;
   flex-shrink: 0;
 }
 
-/* Components sidebar (left wide) */
-.components-sidebar-wrapper {
+/* Left wide sidebar */
+.slot-components-sidebar {
   flex-shrink: 0;
   max-width: 237px;
   width: 100%;
 }
 
 /* Center dashboard area */
-.dashboard-status {
-  flex: 1;
-  background-color: #EBECF7;
-  min-width: 0; /* critical for responsiveness */
+.slot-dashboard-status {
+  width: 755px;
+  margin-left:10px;
+  margin-right:10px;
 }
 
 /* Template summary card */
-.template-summary-card {
+.slot-template-summary-card {
   width: 100%;
   max-width: 337px;
   background: #F9F9FF;
@@ -44,20 +44,20 @@
   box-sizing: border-box;
 }
 
-.summary-item {
+.slot-summary-item {
   display: flex;
   flex-direction: column;
   gap: 4px;
   border-bottom: 2px solid #EDEDED;
 }
 
-.summary-label {
+.slot-summary-label {
   font-size: 12px;
   font-weight: 400;
   color: #9F9E9E;
 }
 
-.summary-value {
+.slot-summary-value {
   font-size: 14px;
   font-weight: 600;
   color: #494949;
@@ -69,8 +69,8 @@
 }
 
 /* Center content wrapper */
-.content-wrapper {
-  max-width: 100%;
+.slot-content-wrapper {
+  width: 100%;
   margin: 0;
   padding: 0;
   display: flex;
@@ -79,7 +79,7 @@
 }
 
 /* Notification label */
-.notification-label {
+.slot-notification-label {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -90,108 +90,109 @@
   border-radius: 8px;
   height: 50px;
   gap: 10px;
+  width: 755px;
 }
 
-.notification-label span {
+.slot-notification-label span {
   font-weight: 400;
   font-size: 10px;
   color: #AAAAAA;
   line-height: 1;
 }
 
-.notification-label h5 {
+.slot-notification-label h5 {
   font-weight: 400;
   font-size: 14px;
   color: #141313;
   margin: 0;
   line-height: 1.2;
 }
+
 /* Notification card container */
-.notificationCard {
+.slot-notificationCard {
+  max-width: none;
   background-color: white;
   border-radius: 12px;
-  max-width: 755px;
-  width: 100%;
-  padding: 20px;           /* inner spacing */
-  padding-bottom: 40px;    /* extra bottom spacing */
-  min-height: 500px;       /* ensures decent height on desktop */
-  box-sizing: border-box;  /* include padding in height */
-  display: flex;
+  padding: 20px 20px 40px 20px;
   flex-direction: column;
-  gap: 16px;               /* space between children if needed */
+  gap: 16px;
+  width: 755px;
 }
-
-/* ---------- Responsive ---------- */
-@media (max-width: 768px) {
-  .notificationCard {
-    min-height: 600px;      /* allow card to grow naturally */
-    padding: 16px 12px;    /* smaller padding on mobile */
-    width: 100%;           /* full width */
-  }
-}
-
 
 /* Right sidebar */
-.properties-sidebar-wrapper {
-  flex-shrink: 0;
-  max-width: 280px;
+.slot-properties-sidebar-wrapper {
+  
+  max-width: 237px!important;
   width: 100%;
   margin-right: 20px;
 }
 
 /* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+  .slot-notificationCard {
+    min-height: 600px;
+    padding: 16px 12px;
+    width: 100%;
+  }
+}
 
-/* Tablets */
 @media (max-width: 1024px) {
-  .components-sidebar-wrapper,
-  .properties-sidebar-wrapper {
+  .slot-components-sidebar,
+  .slot-properties-sidebar-wrapper {
     max-width: 100%;
   }
 
-  .template-summary-card {
+  .slot-template-summary-card {
     max-width: 100%;
   }
 }
 
-/* Tablets & phones */
 @media (max-width: 768px) {
-  .bodyContainer {
+  .slot-bodyContainer {
     flex-direction: column;
   }
 
-  .status-sidebar {
+  .slot-status-sidebar {
     max-width: 100%;
     display: flex;
     justify-content: center;
   }
 
-  .components-sidebar-wrapper,
-  .dashboard-status,
-  .properties-sidebar-wrapper {
+  .slot-components-sidebar,
+  .slot-dashboard-status,
+  .slot-properties-sidebar-wrapper {
     width: calc(100% - 20px);
     margin: 10px;
   }
 
-  .template-summary-card {
+  .slot-template-summary-card {
     max-width: 100%;
+  }
+
+  .slot-properties-sidebar-wrapper{
+    width: 100%!important;
+    max-width: 95%!important;
+  }
+  .slot-notification-label{
+    width: 100%!important;
+    max-width: 99.5%!important;
   }
 }
 
-/* Small phones */
 @media (max-width: 480px) {
-  .summary-label {
+  .slot-summary-label {
     font-size: 11px;
   }
 
-  .summary-value {
+  .slot-summary-value {
     font-size: 13px;
   }
 
-  .notification-label h5 {
+  .slot-notification-label h5 {
     font-size: 13px;
   }
 
-  .notificationCard {
+  .slot-notificationCard {
     height: auto;
     min-height: 300px;
   }

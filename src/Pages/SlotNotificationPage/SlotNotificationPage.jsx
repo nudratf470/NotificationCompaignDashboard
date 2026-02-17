@@ -2,8 +2,6 @@ import React from "react";
 import Header from "../../Components/Header/Header";
 import CreateNotificationTopBar from "../../Components/CreateNotificationTopBar/CreateNotificationTopBar";
 import AppointmentSideBar from "../../Components/AppointmentSideBar/AppointmentSideBar";
-import ComponentsSidebar from "../../Components/ComponentsSidebar/ComponentsSidebar";
-import NotificationEditor from "../../Components/NotificationEditor/NotificationEditior";
 import YellowRoundedButton from "../../Components/YellowRoundedButton/YellowRoundedButton";
 import "./SlotNotificationPage.css";
 import { useNavigate } from "react-router-dom";
@@ -15,26 +13,27 @@ const navigate=useNavigate();
       <Header />
       <CreateNotificationTopBar />
 
-      <div className="bodyContainer">
-        {/* LEFT SIDEBAR */}
-        <div className="status-sidebar">
-          <AppointmentSideBar />
-        </div>
+      <div className="slot-body">
+  {/* LEFT SIDEBAR */}
+  <div className="slot-status-sidebar">
+    <AppointmentSideBar />
+  </div>
+
 
         {/* TEMPLATE NAME */}
-        <div className="mt-3 labels-container">
+        <div className="labels-container">
           <span className="label-name">Template Name</span>
           <h3 className="label-title">Slot Updated Notification</h3>
         </div>
 
         {/* FIRST COLUMN */}
         <div className="bodylabelContainer">
-          <div className="mt-3 Body-labels-container">
+          <div className="Body-labels-container">
             <span className="Body-label-name">Campaign Name</span>
             <h3 className="Body-label-title">Slot Updated Notification</h3>
           </div>
 
-          <div className="mt-3 Body-labels-container">
+          <div className="Body-labels-container">
             <span className="Body-label-name">Trigger</span>
             <h3 className="Body-label-title">
               Appointment Booked
@@ -54,7 +53,7 @@ const navigate=useNavigate();
             </h3>
           </div>
 
-          <div className="mt-3 Body-labels-container">
+          <div className="Body-labels-container">
             <span className="Body-label-name">Notification Purpose</span>
             <h3 className="Body-label-title">
               Slot Updated
@@ -76,7 +75,7 @@ const navigate=useNavigate();
 
         {/* SECOND COLUMN */}
         <div className="bodylabelContainertwo">
-          <div className="mt-3 Body-labels-container">
+          <div className="Body-labels-container">
             <span className="Body-label-name">Repeat Pattern</span>
             <h3 className="Body-label-title">
               Once
@@ -89,7 +88,7 @@ const navigate=useNavigate();
             </h3>
           </div>
 
-          <div className="mt-3 Body-labels-container">
+          <div className="Body-labels-container">
             <span className="Body-label-name">Channel</span>
             <h3 className="Body-label-title">
               Both (Push Notification, In App)
@@ -102,7 +101,7 @@ const navigate=useNavigate();
             </h3>
           </div>
 
-          <div className="mt-3 Body-labels-container">
+          <div className="Body-labels-container">
             <span className="Body-label-name">Group</span>
             <h3 className="Body-label-title">
               Group 1 (256 people)
@@ -117,7 +116,7 @@ const navigate=useNavigate();
         </div>
 
         {/* NEXT BUTTON */}
-        <div className="sidebar-wrapper mt-3">
+        <div className="Button-wrapper">
           <YellowRoundedButton label="Next" onClick={() => navigate("/slot-updated")}  />
         </div>
       </div>

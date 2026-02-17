@@ -1,4 +1,4 @@
-.moon-icon{
+.moon-iconimg{
     background-color: var(--brand-lightGray);
     border-radius: 8px;
     width: 33px;
@@ -6,8 +6,8 @@
     display: inline-flex; 
     align-items: center; 
     justify-content: center;
+    margin-left: -2px;
 }
-
 
 .top-bar{
     background-color: white;
@@ -20,6 +20,7 @@ font-weight: 500;
 font-size: 18px;
 line-height: 21px;
 color: #404145;
+margin-left: -7px;
 }
 
 

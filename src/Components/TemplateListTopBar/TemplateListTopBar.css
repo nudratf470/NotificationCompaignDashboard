@@ -6,7 +6,7 @@
     display: inline-flex; 
     align-items: center; 
     justify-content: center;
-    margin-left: -2px;
+    margin-left: 8px;
     flex-shrink: 0;
 }
 
@@ -24,8 +24,8 @@
     height: 51px!important;
 }
 
-.TemplateTopbar-heading{
-    font-weight: normal!important;
+.TemplateTopbar-Heading{
+    font-weight: 400!important;
     font-size: 16px;
     line-height: 19px;
     color: #404145;
@@ -137,9 +137,12 @@
         max-width: 250px;
     }
     
-    .TemplateTopbar-heading {
+    .TemplateTopbar-Heading {
         font-size: 15px;
     }
+    .moonIcon{
+        margin-left: -10px;
+}
 }
 
 @media (max-width: 768px) {
@@ -154,10 +157,14 @@
         max-width: 200px;
     }
     
-    .TemplateTopbar-heading {
+    .TemplateTopbar-Heading {
         font-size: 14px;
         white-space: nowrap;
     }
+         .moonIcon{
+        margin-left: -8px;
+}
+    
      
 }
 
@@ -180,12 +187,16 @@
     .TemplateTopbar-heading {
         font-size: 13px;
     }
+
+             .moonIcon{
+        margin-left: -4px;
+}
     
   
 }
 
 @media (max-width: 400px) {
-    .TemplateTopbar-heading {
+    .TemplateTopbar-Heading {
         font-size: 12px;
     }
     
