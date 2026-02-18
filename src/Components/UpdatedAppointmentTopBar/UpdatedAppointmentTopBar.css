@@ -113,8 +113,6 @@
 
 @media (max-width: 576px) {
   .uatb-top-bar { padding: 10px 12px; }
-  .uatb-moonicon { width: 30px; height: 30px; }
-  .uatb-moonicon img { width: 16px; height: 16px; }
   .uatb-toggle-btn { padding: 4px 6px; }
   .uatb-action-btn { width: 28px; height: 28px; }
 }

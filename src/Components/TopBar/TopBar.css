@@ -69,10 +69,8 @@ margin-left: 20px!important;
   .btn-text {
     display: none;   
   }
-
-  .moon-icon {
-    width: 28px;
-    height: 28px;
+  .moon-icon{
+    margin-left: 3px;
   }
 
 }

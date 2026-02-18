@@ -139,8 +139,8 @@
     width: 14px;
     height: 14px;
   }
-  .moonicon{
-    margin-left: -14px;
+  .moon-Icon{
+    margin-left: -12px;
   }
 }
 
@@ -166,6 +166,9 @@
   .changes-saved-text {
     display: none;
   }
+   .moon-Icon{
+    margin-left: -5px!important;
+  }
 }
 
 @media (max-width: 576px) {
@@ -173,16 +176,10 @@
     padding: 10px 12px;
   }
 
-  .moon-icon {
-    width: 30px;
-    height: 30px;
+ 
+ .moon-Icon{
+    margin-left: -3px!important;
   }
-
-  .moon-icon img {
-    width: 16px;
-    height: 16px;
-  }
-
   .toggle-btn {
     padding: 4px 6px;
   }
