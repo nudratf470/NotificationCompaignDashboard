@@ -1,0 +1,44 @@
+/* ---------- Next Button Container ---------- */
+.nextbtnContainer {
+  width: 100%;
+  max-width: 237px; /* desktop width */
+  height: 66px;
+  background: #F9F9FF;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 8px;
+  margin: 0 auto; /* center on desktop */
+}
+
+/* ---------- Preview Options ---------- */
+.previewOptions {
+  width: 100%;
+  min-width: 237px; /* desktop width */
+  height: 161px;
+  background: #F9F9FF;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 18px;
+  padding: 19px 24px;
+  margin: 0 auto; /* center on desktop */
+}
+
+.option-icons {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.option-icons span {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #494949;
+}
+
+/* ---------- Responsive: make full width on tablet/mobile ---------- */
+
