@@ -3,7 +3,7 @@ import Header from "../../Components/Header/Header";
 import UpdatedAppointmentTopBar from "../../Components/UpdatedAppointmentTopBar/UpdatedAppointmentTopBar"; 
 import AppointmentSideBar from "../../Components/AppointmentSideBar/AppointmentSideBar"; 
 import ComponentsSidebar from "../../Components/ComponentsSidebar/ComponentsSidebar"; 
-import PropertiesSideBar from "../../Components/PropertiesSideBar/PropertiesSideBar"; 
+import PropertySideBar from "../../Components/Property-SideBar/Property-SideBar"; 
 import NotificationEditor from "../../Components/NotificationEditor/NotificationEditior"; 
 import "./UpdateAppointmentPage.css"; 
 
@@ -36,7 +36,7 @@ const UpdateAppointmentPage = () => {
 
         {/* Right Properties Sidebar */}
         <div className="properties-sidebar">
-          <PropertiesSideBar />
+          <Property-SideBar />
         </div>
       </div>
     </div>
