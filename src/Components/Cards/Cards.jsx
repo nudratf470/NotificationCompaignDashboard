@@ -1,13 +1,11 @@
 import React from 'react'
 import { Row, Col, Card, Container } from "react-bootstrap";
-import send from "../../assets/images/send.svg";
-import click from "../../assets/images/click.svg";
-import convert from "../../assets/images/convert.svg";
-import delivered from "../../assets/images/delivered.svg";
-import open from "../../assets/images/open.svg";
-import zigzagarrow from "../../assets/images/zigzagarrow.png";
-import linearrow from "../../assets/images/linearrow.png";
-import reversezigzag from "../../assets/images/reversezigzag.png";
+import send from "../../assets/icons/send.svg";
+import delivered from "../../assets/icons/delivered.svg";
+import open from "../../assets/icons/open.svg";
+import zigzagarrow from "../../assets/icons/zigzagarrow.png";
+import linearrow from "../../assets/icons/linearrow.png";
+import reversezigzag from "../../assets/icons/reversezigzag.png";
 import './Cards.css';
 
 const Cards = () => {

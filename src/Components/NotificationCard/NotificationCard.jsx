@@ -1,10 +1,10 @@
 import React from "react";
 import { Row, Col, Card } from "react-bootstrap";
-import send from "../../assets/images/send.svg";
-import click from "../../assets/images/click.svg";
-import convert from "../../assets/images/convert.svg";
-import delivered from "../../assets/images/delivered.svg";
-import open from "../../assets/images/open.svg";
+import send from "../../assets/icons/send.svg";
+import click from "../../assets/icons/click.svg";
+import convert from "../../assets/icons/convert.svg";
+import delivered from "../../assets/icons/delivered.svg";
+import open from "../../assets/icons/open.svg";
 import './NotificationCard.css'
 
 const NotificationCard = () => {

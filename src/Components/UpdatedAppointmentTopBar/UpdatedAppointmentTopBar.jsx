@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import moon from "../../assets/images/moon.svg";
+import moon from "../../assets/icons/moon.svg";
 import { Col, Row } from "react-bootstrap";
 import "./UpdatedAppointmentTopBar.css";
 

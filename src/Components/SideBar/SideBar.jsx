@@ -1,57 +1,64 @@
-import React from 'react'
-import femaleicon from "../../assets/images/femaleicon.svg";
-import maleicon from "../../assets/images/maleicon.svg";
-import business from "../../assets/images/business-center.svg";
-import calender from "../../assets/images/calender.svg";
-import clipBoard from "../../assets/images/clipBoard.svg";
-import document from "../../assets/images/document.svg";
+import React, { useState } from "react";
 import { Nav } from "react-bootstrap";
-import './SideBar.css';
+import "./SideBar.css";
 
-const SideBar = () => {
+const SideBar = ({ icons = [], defaultActive = 0 }) => {
+  const [activeIndex, setActiveIndex] = useState(defaultActive);
+
   return (
-    <>
-      <div className="sb-sidebarMenu mt-1">
-        <Nav className="sb-sidebar-nav">
-          <Nav.Link className="sb-sidebar-link active">
-            <div className="sb-icon-wrap sb-calender">
-              <img src={calender} alt="" className="sb-iconSize"/>
-            </div>
-          </Nav.Link>
+    <div className="statusSidebarMenu mt-2">
+      <Nav className="statusSidebar-nav">
+        {icons.map((item, index) => {
 
-          <Nav.Link className="sb-sidebar-link">
-            <div className="sb-icon-wrap">
-              <img src={femaleicon} alt="" className="sb-iconSize"/>
-            </div>
-          </Nav.Link>
+          if (item.type === "divider") {
+            return (
+              <div key={index} className="statusSidebar-divider">
+                <svg width="19" height="2" viewBox="0 0 19 2" fill="none">
+                  <path d="M0.75 0.75H17.75" stroke="#BFBFBF" strokeWidth="1.5" strokeLinecap="round" />
+                </svg>
+              </div>
+            );
+          }
 
-          <Nav.Link className="sb-sidebar-link">
-            <div className="sb-icon-wrap">
-              <img src={maleicon} alt="" className="sb-iconSize"/>
-            </div>
-          </Nav.Link>
 
-          <Nav.Link className="sb-sidebar-link">
-            <div className="sb-icon-wrap">
-              <img src={document} alt="" className="sb-iconSize"/>
-            </div>
-          </Nav.Link>
+          if (item.group) {
+            return (
+              <div key={index} className="statusSidebar-group">
+                {item.group.map((icon, subIndex) => (
+                  <Nav.Link
+                    key={subIndex}
+                    className="statusSidebar-link"
+                  >
+                    <div className="statusSidebar-icon-wrap">
+                      <img src={icon.src} alt={icon.alt || ""} className="statusSidebar-icon" />
+                    </div>
+                  </Nav.Link>
+                ))}
+              </div>
+            );
+          }
 
-          <Nav.Link className="sb-sidebar-link">
-            <div className="sb-icon-wrap">
-              <img src={clipBoard} alt="" className="sb-iconSize"/>
-            </div>
-          </Nav.Link>
 
-          <Nav.Link className="sb-sidebar-link">
-            <div className="sb-icon-wrap">
-              <img src={business} alt="" className="sb-iconSize"/>
-            </div>
-          </Nav.Link>
-        </Nav>
-      </div>
-    </>
-  )
-}
+          return (
+            <Nav.Link
+              key={index}
+              className={`statusSidebar-link ${activeIndex === index ? "active" : ""}`}
+              onClick={() => setActiveIndex(index)}
+            >
+              <div className="statusSidebar-icon-wrap">
+                <img
+                  src={activeIndex === index && item.activeSrc ? item.activeSrc : item.src}
+                  alt={item.alt || ""}
+                  className="statusSidebar-icon"
+                />
+              </div>
+            </Nav.Link>
+          );
 
-export default SideBar
+        })}
+      </Nav>
+    </div>
+  );
+};
+
+export default SideBar;

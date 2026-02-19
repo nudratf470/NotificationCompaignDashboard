@@ -1,11 +1,12 @@
 import React from 'react'
 import { Navbar, Nav, Container } from "react-bootstrap";
-import logo from "../../assets/images/logo.png";
-import avatar from "../../assets/images/avatar.svg";
-import bell from "../../assets/images/bell.svg";
-import admin from "../../assets/images/admin.svg";
-import gear from "../../assets/images/gear.svg";
-import line from "../../assets/images/line.svg";
+import logo from "../../assets/icons/logo.png";
+import manicon from "../../assets/icons/manicon.svg";
+import bell from "../../assets/icons/bell.svg";
+import admin from "../../assets/icons/admin.svg";
+import gear from "../../assets/icons/gear.svg";
+import line from "../../assets/icons/line.svg";
+
 import './Header.css'
 
 const Header = () => {
@@ -32,8 +33,7 @@ const Header = () => {
           </div>
 
             <img src={line} alt="line"/>
-
-            <img src={avatar} alt="avatar"/>
+            <img src={manicon} alt="manicon"/>
         </Nav>
       </Container>
     </Navbar>

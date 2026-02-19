@@ -1,7 +1,6 @@
 import React from 'react'
 import PerformanceChart from '../Graph/PerformanceChart';
 import Cards from '../Cards/Cards';
-import {Container} from "react-bootstrap";
 import './BodyContent.css';
 import NotificationPreview from '../NotificationPreview/NotificationPreview';
 import AppointmentUpdatedSchedule from '../AppointmentUpdatedSchedule/AppointmentUpdatedSchedule';

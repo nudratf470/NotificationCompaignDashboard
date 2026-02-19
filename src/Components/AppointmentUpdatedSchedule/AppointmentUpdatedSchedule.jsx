@@ -1,6 +1,6 @@
 import React from "react";
 import "./AppointmentUpdatedSchedule.css";
-import done from "../../assets/images/done.svg";
+import done from "../../assets/icons/done.svg";
 import BlueButton from "../BlueButton/BlueButton";
 
 const AppointmentUpdatedSchedule = () => {

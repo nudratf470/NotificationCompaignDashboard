@@ -1,6 +1,6 @@
 import React from 'react'
-import moon from "../../assets/images/moon.svg";
-import plus from "../../assets/images/plus.svg";
+import moon from "../../assets/icons/moon.svg";
+import plus from "../../assets/icons/plus.svg";
 import {Col,Row,Button} from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import './TopBar.css';

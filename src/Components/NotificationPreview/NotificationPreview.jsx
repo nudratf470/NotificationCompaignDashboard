@@ -1,5 +1,5 @@
 import React from "react";
-import Bellicon from "../../assets/images/Bellicon.svg";
+import Bellicon from "../../assets/icons/Bellicon.svg";
 import "./NotificationPreview.css";
 
 const NotificationPreview = () => {

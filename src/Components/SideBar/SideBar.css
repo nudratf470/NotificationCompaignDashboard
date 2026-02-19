@@ -1,51 +1,79 @@
-.sb-sidebarMenu {
-  width: 41px !important;
-  min-height: 100vh;
+.statusSidebarMenu {
+  width: 47px !important;
   display: flex;
   justify-content: center;
-  background-color: white;
+  min-height: 100vh;
+  box-sizing: content-box!important;
 }
 
-.sb-sidebar-nav {
-  padding: 20px 0;
+.statusSidebar-nav {
+  padding: 24px 0;
   width: 100%;
-  border: 1px solid var(--brand-yellow);
+  border: 2px solid var(--brand-yellow);
   border-radius: 8px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 16px;
+  gap: 24px;
+  background-color: white;
 }
 
-.sb-sidebar-nav .sb-sidebar-link {
+.statusSidebar-nav .statusSidebar-link {
   padding: 0 !important;
   margin: 0 !important;
-  width: auto;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.sb-icon-wrap {
-  height: 34px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.sb-iconSize {
-  width: 11px !important;
-  height: 12px !important;
-}
-
-.sb-sidebar-link.active {
-  border-radius: 5px 0 0 5px;
-  width: 37px;
-  height: 34px;
-  background: #FFE24D;
   position: relative;
-  left: 2px;
-  
+}
 
-  
+.statusSidebar-divider{
+  margin-top: -20px;
+}
+
+.statusSidebar-group{
+  margin-top: -20px;
+}
+
+.statusSidebar-icon-wrap {
+  height: 34px;
+  width: 37px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.statusSidebar-link.active {
+  justify-content: flex-end;
+}
+
+.statusSidebar-nav > .statusSidebar-link.active .statusSidebar-icon-wrap {
+  background: var(--brand-yellow)!important;
+  border-radius: 5px 0 0 5px;
+  height: 34px;
+  margin-right: 0;
+  margin-left: auto; 
+}
+
+.statusSidebar-link:not(.active) {
+  justify-content: center;
+}
+
+.statusSidebar-icon {
+  display: block;
+}
+
+
+@media (max-width: 768px) {
+.appointmentSidebarMenu{
+display: none;
+  }
+}
+
+@media (max-width: 576px) {
+ .appointmentSidebarMenu{
+display: none;
+  }
+ 
 }

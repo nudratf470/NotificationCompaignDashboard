@@ -1,5 +1,5 @@
 import React from "react";
-import moon from "../../assets/images/moon.svg";
+import moon from "../../assets/icons/moon.svg";
 import { Col, Row } from "react-bootstrap";
 import { InputGroup, FormControl, Button } from "react-bootstrap";
 import "./TemplateListTopBar.css";
