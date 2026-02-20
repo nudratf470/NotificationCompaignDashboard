@@ -1,6 +1,5 @@
-import React from "react";
 import Header from "../../Components/Header/Header";
-import CreateNotificationTopBar from "../../Components/CreateNotificationTopBar/CreateNotificationTopBar";
+import TopBar from "../../Components/TopBar/TopBar";
 import YellowRoundedButton from "../../Components/YellowRoundedButton/YellowRoundedButton";
 import calyellow from "../../assets/icons/calyellow.svg";
 import avatar from "../../assets/icons/avatar.svg";
@@ -55,7 +54,7 @@ const SlotNotificationPage = () => {
   return (
     <div className="update-appointment-page">
       <Header />
-      <CreateNotificationTopBar />
+        <TopBar heading="Create Notification Compaign"/>
 
       <div className="slot-body">
   {/* LEFT SIDEBAR */}

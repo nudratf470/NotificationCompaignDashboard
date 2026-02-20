@@ -66,13 +66,13 @@
 
 
 @media (max-width: 768px) {
-.appointmentSidebarMenu{
+.statusSidebarMenu{
 display: none;
   }
 }
 
 @media (max-width: 576px) {
- .appointmentSidebarMenu{
+ .statusSidebarMenu{
 display: none;
   }
  

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Header from '../../Components/Header/Header';
-import TemplateListTopBar from '../../Components/TemplateListTopBar/TemplateListTopBar';
+import TopBar from '../../Components/TopBar/TopBar';
 import SideBar from '../../Components/SideBar/SideBar';
 import DashboardStatus from '../../Components/DashboardStatus/DashboardStatus';
 import femaleicon from "../../assets/icons/female-icon.svg";
@@ -11,7 +11,6 @@ import cube from "../../assets/icons/cube.svg";
 import cartyellow from "../../assets/icons/cartyellow.svg";
 import docyellow from "../../assets/icons/docyellow.svg";
 import envelop from "../../assets/icons/envelop.svg";
-
 import femaleiconwhite from "../../assets/icons/female-iconwhite.svg";
 import humanwhite from "../../assets/icons/humanwhite.svg";
 import dashboardwhite from "../../assets/icons/dashboardwhite.svg";
@@ -38,7 +37,7 @@ const ManageStaff = () => {
   return (
     <div className='manageStaff'>
       <Header />
-      <TemplateListTopBar />
+      <TopBar heading="Template list" headingWeight="400" headingSize="16px" showSearch={true} showAddButton={true} showSettingsIcon={true} />
       
       <div className="manageStaff-bodyContainer">
         <div className="manageStaff-sidebar">

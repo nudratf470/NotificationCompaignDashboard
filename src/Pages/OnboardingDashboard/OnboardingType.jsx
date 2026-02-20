@@ -26,12 +26,12 @@ const OnboardingType = () => {
   { src: document, activeSrc:documentwhite, alt: "document" },
   { src: clipBoard, activeSrc:clipboardwhite, alt: "clipBoard" },
   { src: business, activeSrc:businesswhite, alt: "business" },
- 
 ];
   return (
     <div className='OnboardingType'>
     <Header/>
-    <TopBar/>
+    <TopBar heading="Dashboard" showButton={true} buttonText="Create New" buttonPath="/manage-staff" />
+
     <div className="bodyContainer">
       <div className="sidebar">
     <SideBar icons={campaignIcons} defaultActive={0}/>

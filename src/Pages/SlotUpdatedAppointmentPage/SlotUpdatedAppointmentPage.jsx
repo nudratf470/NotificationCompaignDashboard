@@ -1,10 +1,8 @@
-import React from "react";
 import Header from "../../Components/Header/Header";
 import "./SlotUpdatedAppointmentPage.css";
 import SideBar from "../../Components/SideBar/SideBar";
 import AppointmentUpdatedSchedule from "../../Components/AppointmentUpdatedSchedule/AppointmentUpdatedSchedule";
 import ModifyDelete from "../../Components/ModifyDelete/ModifyDelete";
-import TopBarAppointment from "../../Components/TopBarAppointment/TopBarAppointment";
 import calyellow from "../../assets/icons/calyellow.svg";
 import avatar from "../../assets/icons/avatar.svg";
 import avatartwo from "../../assets/icons/avatartwo.svg";
@@ -29,6 +27,7 @@ import settinghandwhite from "../../assets/icons/settinghandwhite.svg";
 import settinggearwhite from "../../assets/icons/settinggearwhite.svg";
 import lineswhite from "../../assets/icons/lineswhite.svg";
 import clockwhite from "../../assets/icons/clockwhite.svg";
+import TopBar from "../../Components/TopBar/TopBar";
 
 const SlotUpdatedAppointmentPage = () => {
    const campaignAndAdminIcons = [
@@ -51,11 +50,10 @@ const SlotUpdatedAppointmentPage = () => {
       ]
     }, 
     ];
-
   return (
   <div className="slot-update-page">
   <Header />
-  <TopBarAppointment />
+  <TopBar heading="Edit Notification Template" showToggle={true}/>
 
   <div className="slot-bodyContainer">
     {/* Left narrow sidebar */}

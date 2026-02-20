@@ -34,25 +34,228 @@
     height: 51px!important;
 }
 
-.topbar-heading{
+.top-bar .topbar-heading{
 color: #404145;
-font-size: 18px !important;
-font-weight: 500!important;
 margin-left: 20px!important;
 }
 
-.top-bar {
-  background-color: white;
-  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.08);
-  min-height: 51px;
-  padding: 6px 10px;
+
+.setting-icon{
+    width: 30px;
+    height: 30px;
+    background: #FFFFFF;
+    border: 0.5px solid #DCDCDC;
+    border-radius: 5px;
 }
 
-.topbar-heading {
-  color: #404145;
-  font-size: 18px;
-  font-weight: 500;
+
+.add{
+    width: 45px;
+    background: #FFEF9C;
+    border-radius: 10px;
+    height: 30px;
+    border: none;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    color: #745D00;
+    margin-right: 4px;
 }
+
+.search-bar {
+    background: #FFFFFF;
+    border: 1px solid #E8E8E8;
+    border-radius: 8px;
+    height: 36px;
+    max-width: 300px;
+    padding: 0;
+    overflow: hidden;
+    box-shadow: none;
+    margin-left: 60px;
+}
+
+.search-bar .search-icon {
+    background: transparent;
+    border: none;
+    padding-left: 12px;
+    padding-right: 8px;
+    border-radius: 0;
+}
+
+.search-bar .search-input {
+    background: transparent;
+    border: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: #A7A7A7;
+    padding: 0;
+    box-shadow: none !important;
+    height: 100%;
+}
+
+.search-bar .search-input::placeholder {
+    color: #A7A7A7;
+    font-size: 14px;
+}
+
+.search-bar .search-input:focus {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    outline: none;
+}
+
+.search-bar .filter-button {
+    background: #F7F7F7;
+    border: none;
+    border-radius: 5px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    min-width: 24px; 
+    padding: 0;
+    margin: 5px 7px;
+}
+
+.search-bar .filter-button svg {
+    width: 14px;
+    height: 14px;
+    display: block;
+    flex-shrink: 0;
+}
+
+.search-bar .filter-button:hover,
+.search-bar .filter-button:focus,
+.search-bar .filter-button:active {
+    background: #F5F5F5 !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.search-bar:focus-within {
+    border-color: #E8E8E8;
+    box-shadow: none;
+}
+
+.search-bar.input-group {
+    flex-wrap: nowrap;
+}
+
+.search-bar > * {
+    margin: 0;
+}
+
+.toggle-group {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+
+
+.view-toggle {
+  display: inline-flex;
+  background: #F7F7F7;
+  border-radius: 8px;
+  padding: 4px;
+  gap: 2px;
+  justify-content: center;
+  align-items: center;
+}
+
+.toggle-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  background: transparent;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #9E9E9E;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  
+}
+
+.toggle-btn svg { flex-shrink: 0; }
+
+.toggle-btn.active {
+  background: #FFFFFF;
+  color: #1B1B1B;
+  font-weight: 400;
+}
+
+.toggle-btn:hover:not(.active) {
+  color: #6B6B6B;
+}
+
+/* Changes Saved Text */
+.uatb-changes-saved-text {
+  font-size: 14px;
+  font-weight: 400;
+  color: #6A6A6C;
+  margin-left: 27px;
+  margin-right: 10px;
+}
+
+/* Action Buttons (Undo/Redo) */
+.uatb-action-btn {
+  width: 32px;
+  height: 32px;
+  background: #FFFFFF;
+  border: none !important;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  padding: 0;
+  gap: 1px;
+}
+
+.uatb-action-btn svg { display: block; }
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .search-bar {
+        margin-left: 20px;
+        max-width: 250px;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    
+    .search-bar {
+        margin-left: 15px;
+        max-width: 200px;
+    }
+    
+    
+     
+}
+
+@media (max-width: 576px) {
+   
+ 
+    .search-bar {
+        display: none;
+    }
+    
+    /* Reduce gap on mobile */
+    .top-bar .col:first-child {
+        gap: 0.75rem !important;
+    }
+}
+
+
 
 
 @media (max-width: 576px) {

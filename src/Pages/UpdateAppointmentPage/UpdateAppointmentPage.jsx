@@ -1,6 +1,6 @@
 import React from "react"; 
 import Header from "../../Components/Header/Header"; 
-import UpdatedAppointmentTopBar from "../../Components/UpdatedAppointmentTopBar/UpdatedAppointmentTopBar"; 
+import TopBar from "../../Components/TopBar/TopBar";
 import ComponentsSidebar from "../../Components/ComponentsSidebar/ComponentsSidebar"; 
 import NotificationEditor from "../../Components/NotificationEditor/NotificationEditior"; 
 import PropertiesSideBar from "../../Components/PropertiesSideBar/PropertiesSideBar";
@@ -57,7 +57,7 @@ const UpdateAppointmentPage = () => {
   return (
     <div className="update-appointment-page">
       <Header />
-      <UpdatedAppointmentTopBar />
+      <TopBar heading="Edit Notification Template" showToggle={true} showUndoRedo={true} showChangesSaved={true}/>
 
       <div className="body-container">
         {/* Left Narrow Sidebar */}
