@@ -63,16 +63,16 @@
 
 @media (max-width: 576px) {
  
-
-  
-
-  /* Further reduce gap on small mobile */
+.top-header{
+  display: none!important;
+}
+}
+  /* Further reduce gap on small mobile 
   .header-nav {
     gap: 0.5rem !important;
   }
 
-  /* Hide settings gear on very small screens */
   .settings-icon {
     display: none;
   }
-}
+  */

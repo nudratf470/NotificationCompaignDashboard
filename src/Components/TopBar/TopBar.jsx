@@ -34,7 +34,7 @@ const TopBar = ({
           </h3>
 
         {showSearch && (
-          <InputGroup className="search-bar d-flex align-items-center">
+          <InputGroup className="search-bar d-none d-sm-inline-flex d-flex align-items-center">
             <InputGroup.Text className="search-icon">
               <svg width="15" height="15" viewBox="0 0 15 15" fill="none">
                 <path
@@ -108,7 +108,7 @@ const TopBar = ({
         </Col>
       )}
 
-      <Col xs="auto" className="d-flex align-items-center gap-2 p-0">
+      <Col xs="auto" className="d-flex align-items-center gap-2 p-0 d-none d-sm-inline-flex">
 
         {showAddButton && (
           <button className="add">Add</button>

@@ -12,7 +12,7 @@ import './Header.css'
 const Header = () => {
   return (
     <>
-    <Navbar className="top-header d-flex align-items-center">
+    <Navbar className="top-header">
       <Container fluid>
         <Navbar.Brand>
           <img src={logo} alt="logo" className='logo'/>
