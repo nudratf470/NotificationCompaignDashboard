@@ -1,7 +1,7 @@
-/* ---------- Next Button Container ---------- */
+/* Next Button Container */
 .nextbtnContainer {
   width: 100%;
-  max-width: 237px; /* desktop width */
+  max-width: 237px;
   height: 66px;
   background: #F9F9FF;
   border-radius: 12px;
@@ -9,28 +9,34 @@
   justify-content: center;
   align-items: center;
   padding: 0 8px;
-  margin: 0 auto; /* center on desktop */
+  margin: 0 auto;
 }
 
-/* ---------- Preview Options ---------- */
+/* Preview Options */
 .previewOptions {
   width: 100%;
-  min-width: 237px; /* desktop width */
-  height: 161px;
+  min-width: 237px;
   background: #F9F9FF;
   border-radius: 12px;
   display: flex;
-  justify-content: center;
   flex-direction: column;
-  gap: 18px;
-  padding: 19px 24px;
-  margin: 0 auto; /* center on desktop */
+  padding: 12px 0;
+  margin: 0 auto;
 }
 
+
+
+/* Row with label and arrow */
 .option-icons {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   justify-content: space-between;
+  padding: 10px 24px;
+  cursor: pointer;
+}
+
+.option-icons:hover {
+  background: #F0F0FF;
 }
 
 .option-icons span {
@@ -40,5 +46,30 @@
   color: #494949;
 }
 
-/* ---------- Responsive: make full width on tablet/mobile ---------- */
+/* Expanded content */
+.option-content {
+  padding: 8px 24px 14px 24px;
+}
 
+.option-content-text {
+  font-size: 12px;
+  color: #494949;
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .nextbtnContainer,
+  .previewOptions {
+    max-width: 100%;
+    min-width: unset;
+  }
+}
+
+@media (max-width: 768px) {
+  .nextbtnContainer,
+  .previewOptions {
+    width: 100%;
+    max-width: 100%;
+  }
+}

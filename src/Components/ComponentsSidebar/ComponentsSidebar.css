@@ -1,13 +1,21 @@
 .components-sidebar {
-
   background: #F9F9FF;
   border: 0.5px solid #DCDCDC;
   padding: 8px 8px 0 8px;
   display: flex;
   flex-direction: column;
   gap: 4px;
-height: 487px;
+  height: 487px;
   border-radius: 12px;
+  overflow-y: auto;
+}
+
+.component-item-wrapper {
+  border-bottom: 1px solid #E6E6E6;
+}
+
+.component-item-wrapper:last-child {
+  border-bottom: none;
 }
 
 .component-item {
@@ -17,14 +25,12 @@ height: 487px;
   padding: 12px;
   cursor: pointer;
   transition: background-color 0.2s ease;
-  position: relative; border-bottom: 1px solid #E6E6E6;
 }
 
-
-.component-item:last-child {
-  border-bottom: none;
+.component-item:hover {
+  background: #F0F0FF;
+  border-radius: 8px;
 }
-
 
 .component-icon {
   display: flex;
@@ -33,19 +39,16 @@ height: 487px;
   flex-shrink: 0;
 }
 
-
-
 .component-label {
   font-size: 14px;
   font-weight: 400;
   color: #494949;
-  padding-left:5px;
+  padding-left: 5px;
   flex: 1;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-
 
 .add-btn {
   width: 24px;
@@ -56,20 +59,28 @@ height: 487px;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  opacity: 1;          /* always visible */
   flex-shrink: 0;
   padding: 0;
 }
-
-
 
 .add-btn svg {
   display: block;
 }
 
+.component-accordion-content {
+  padding: 8px 12px 12px 12px;
+  background: #F4F4FF;
+  border-radius: 0 0 8px 8px;
+}
+
+.component-accordion-text {
+  font-size: 12px;
+  color: #818181;
+  margin: 0;
+}
 
 @media (max-width: 992px) {
-.components-sidebar {
-height: auto;
- }
+  .components-sidebar {
+    height: auto;
+  }
 }

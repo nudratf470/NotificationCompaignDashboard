@@ -1,6 +1,4 @@
-/* Container for the Next button */
 .md-nextButtonContainer {
-  
   width: 237px;
   height: 66px;
   background: #f9f9ff;
@@ -11,23 +9,25 @@
   padding: 0 8px;
 }
 
-/* Preview options container */
 .md-previewOptions {
- 
   width: 237px;
   background: #f9f9ff;
   border-radius: 12px;
   display: flex;
   flex-direction: column;
-  gap: 18px;
-  padding: 19px 24px;
+  padding: 8px 0;
 }
 
-/* Individual option rows (Modify / Delete) */
 .md-optionIcons {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   justify-content: space-between;
+  padding: 10px 24px;
+  cursor: pointer;
+}
+
+.md-optionIcons:hover {
+  background: #F0F0FF;
 }
 
 .md-optionIcons span {
@@ -37,18 +37,23 @@
   color: #494949;
 }
 
+.md-optionContent {
+  padding: 8px 24px 14px 24px;
+}
+
+.md-optionContentText {
+  font-size: 12px;
+  color: #9f9e9e;
+  margin: 0;
+}
+
 @media (max-width: 768px) {
   .md-nextButtonContainer,
   .md-previewOptions {
     width: 100% !important;
     max-width: 100% !important;
     margin: 0 !important;
-    padding: 16px;
     box-sizing: border-box;
-  }
-
-    .md-nextButtonContainer {
-    display: flex;
   }
 
   .md-nextButtonContainer > * {
@@ -59,6 +64,3 @@
     width: 100% !important;
   }
 }
-
-
-

@@ -1,16 +1,13 @@
 .manageStaff {
   background-color: #EBECF7 !important;
-  padding-bottom: 70px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .manageStaff-bodyContainer {
   display: flex;
-}
-
-.manageStaff-sidebar {
-  margin: 0;
-  padding: 0;
-  width: 41px !important;
+  flex: 1;  
 }
 
 .manageStaff-dashboard {
@@ -22,23 +19,27 @@
   width: 100%;
   border: none !important;
   background: #FFD705;
-  border-radius: 8px;
   font-weight: 500;
   font-size: 14px;
-  line-height: 29px;
   text-align: center;
-  color: #FFFFFF;
+  color: #745D00;
   padding: 10px 20px;
   cursor: pointer;
+  background: #FFD705;
+  border-radius: 128px;
 }
 
-.yellow-next-button {
+
+  .yellow-next-button {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: -100px;   
+  position: relative;
+  top: -70px;
   width: 100%;
+
 }
+
 
 @media (max-width: 992px) {
   .yellow-next-button {
