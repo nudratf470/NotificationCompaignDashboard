@@ -76,9 +76,13 @@ const UpdateAppointmentPage = () => {
               <span>Notification Name</span>
               <h5>Slot Updated Notification</h5>
             </div>
-            <NotificationEditor />
+
+          <div className="add-section-heading">
+          <h4>Add Section</h4>
           </div>
-        </div>
+          <NotificationEditor />
+          </div>
+          </div>
 
         {/* Right Properties Sidebar */}
         <div className="properties-sidebar">

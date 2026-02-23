@@ -79,8 +79,8 @@
   margin: 0;
 }
 
-@media (max-width: 992px) {
-  .components-sidebar {
-    height: auto;
+@media (max-width:768px){
+  .components-sidebar{
+    display: none;
   }
 }

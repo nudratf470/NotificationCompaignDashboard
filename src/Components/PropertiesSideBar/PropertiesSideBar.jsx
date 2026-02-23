@@ -29,7 +29,7 @@ const PropertiesSideBar = () => {
         />
       </div>
 
-      <div className="previewOptions mt-2">
+      <div className="previewOptions">
         {options.map((option) => (
           <div key={option} className="option-group">
             <div
