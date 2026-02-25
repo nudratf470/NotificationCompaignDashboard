@@ -4,7 +4,7 @@ import { Table } from "react-bootstrap";
 import "./DashboardStatus.css";
 
 const DashboardStatus = ({ selectedId, setSelectedId }) => {
- 
+
   const notifications = [
     {
       id: 1,
@@ -102,7 +102,7 @@ const DashboardStatus = ({ selectedId, setSelectedId }) => {
                 style={{ cursor: "pointer" }}
               >
                 {selectedId === notification.id ? (
-                  
+
                   <svg
                     width="14"
                     height="14"
@@ -115,7 +115,7 @@ const DashboardStatus = ({ selectedId, setSelectedId }) => {
                     <rect x="4" y="4" width="6" height="6" rx="3" fill="#FFD705" />
                   </svg>
                 ) : (
-                  
+
                   <svg width="14" height="14" viewBox="0 0 14 14">
                     <rect
                       width="14"

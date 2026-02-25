@@ -24,10 +24,8 @@
 .section-header {
   display: flex;
   align-items: flex-start;
-  justify-content: space-between;
+  justify-content: center;
   gap: 12px;
-  position: relative;
-  width: 375px;
   margin: auto;
 }
 
@@ -118,7 +116,6 @@
   }
 }
 
-/* Menu Items */
 .add-menu-item {
   width: 85%;
   position: relative;

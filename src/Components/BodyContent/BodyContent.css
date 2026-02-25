@@ -23,3 +23,32 @@
   flex: 1;
   border: 0.8px solid rgba(0, 0, 0, 0.08);
 }
+
+.floating-plus-btn {
+  display: none!important; 
+  position: fixed;
+  bottom: 32px;
+  right: 45px;
+  width: 64px;
+  height: 64px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 1000;
+  transition: transform 0.2s ease;
+  padding: 0;
+}
+
+.mobile-only {
+display: none !important;
+}
+
+@media (max-width: 768px) {
+ .mobile-only {
+    display: block !important;
+  }
+
+  .NotificationPreview h4{
+  margin-left: 0;
+}
+}

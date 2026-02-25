@@ -10,16 +10,22 @@ font-size: 14px;
 line-height: 16px;
 text-align: center;
 color: #745D00!important;
+display: flex;
+align-items:center;
+justify-content: center;
 border: none!important;
 }
 .yellowRoundedButton:hover{
 background: #FFD705!important;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 765px) {
 .yellowRoundedButton{
    width: 100%;
 max-height: 32px; 
+display: flex!important;
+align-items:center!important;
+justify-content: center!important;
 }
   
 }

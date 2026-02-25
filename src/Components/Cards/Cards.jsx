@@ -13,8 +13,8 @@ const Cards = () => {
     <>
       <Container fluid className='p-0 m-0'>
         <Row className='compaign-cards gx-3 gx-md-4 gy-3'>
-          <Col xs={12} sm={6} md={6} lg={3}>
-            <Card className="Content-Card d-flex gap-1">
+          <Col xs={6} lg={3}>
+            <Card className="Content-Card d-flex gap-0 gap-sm-1">
               <div className="card-heading d-flex justify-content-between">
                 <div className="iconbg Blue">
                   <img src={send} alt="Send icon" />
@@ -31,8 +31,8 @@ const Cards = () => {
             </Card>
           </Col>
 
-          <Col xs={12} sm={6} md={6} lg={3}>
-            <Card className="Content-Card d-flex gap-1">
+          <Col xs={6} lg={3}>
+            <Card className="Content-Card d-flex gap-0 gap-sm-1">
               <div className="card-heading d-flex justify-content-between">
                 <div className="iconbg Green">
                   <img src={delivered} alt="Delivered icon" />
@@ -49,8 +49,8 @@ const Cards = () => {
             </Card>
           </Col>
 
-          <Col xs={12} sm={6} md={6} lg={3}>
-            <Card className="Content-Card d-flex gap-1">
+          <Col xs={6} lg={3}>
+            <Card className="Content-Card d-flex gap-0 gap-sm-1">
               <div className="card-heading d-flex justify-content-between">
                 <div className="iconbg iconbgPurple">
                   <img src={open} alt="Open icon" />
@@ -67,8 +67,8 @@ const Cards = () => {
             </Card>
           </Col>
 
-          <Col xs={12} sm={6} md={6} lg={3}>
-            <Card className="Content-Card d-flex gap-1">
+          <Col xs={6} lg={3}>
+            <Card className="Content-Card d-flex gap-0 gap-sm-1">
               <div className="card-heading d-flex justify-content-between">
                 <div className="iconbg iconbgPink">
                   <img src={linearrow} alt="Click icon" />

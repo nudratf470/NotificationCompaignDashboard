@@ -124,40 +124,8 @@ background: linear-gradient(135deg, rgba(152, 16, 250, 0.2) 0%, rgba(152, 16, 25
 }
 
 
-/* Tablet landscape and smaller desktops (768px - 991px) */
-@media (max-width: 991px) and (min-width: 768px) {
-  .Content-Card {
-    padding: 20px !important;
-  }
 
-  .notificationNumber {
-    font-size: 28px;
-    margin: 6px 0 4px 0;
-  }
-
-  .paragraphText {
-    font-size: 13px;
-  }
-
-  .iconbg {
-    width: 46px;
-    height: 46px;
-  }
-
-  .iconbg img {
-    width: 22px;
-    height: 22px;
-  }
-
-  .arrowbg {
-    min-width: 76px;
-    height: 27px;
-    gap: 7px;
-  }
-}
-
-/* Tablet portrait (576px - 767px) */
-@media (max-width: 767px) and (min-width: 576px) {
+@media (max-width: 767px){
   .Content-Card {
     padding: 22px 20px 26px 20px !important;
   }
@@ -182,55 +150,39 @@ background: linear-gradient(135deg, rgba(152, 16, 250, 0.2) 0%, rgba(152, 16, 25
   }
 }
 
-/* Mobile devices (up to 575px) */
-@media (max-width: 575px) {
-  .compaign-cards {
-    margin-top: 8px !important;
+@media (max-width: 575px){
+.notificationNumber {
+font-size: 18px;
   }
 
-  .Content-Card {
-    padding: 20px 18px 24px 18px !important;
+.paragraphText {
+font-size: 12px;
   }
 
-  .card-heading {
-    gap: 10px;
+.Content-Card{
+   padding: 15px 15px 8px 15px!important;
+}  
+
+.iconbg {
+  width: 34px;
+  height: 34px;
   }
 
-  .notificationNumber {
-    font-size: 28px;
-    margin: 8px 0 4px 0;
-  }
-
-  .paragraphText {
-    font-size: 13px;
-  }
-
-  .iconbg {
-    width: 44px;
-    height: 44px;
-  }
-
-  .iconbg img {
-    width: 22px;
-    height: 22px;
-  }
-
-  .arrowbg {
-    min-width: 72px;
-    height: 26px;
-    gap: 6px;
-    padding: 0 8px;
-  }
-
-  .arrowbg img {
-    width: 12px;
-    height: 12px;
-  }
-
-  .arrowbg span {
-    font-size: 11px;
-  }
+.iconbg img {
+    width: 18px;
+    height: 18px;
 }
+
+.arrowbg span{
+  font-size: 12px!important;
+}
+
+.arrowbg {
+  width:64px;
+  height: 24px;
+ }
+}
+
 
 /* Extra small mobile devices (up to 360px) */
 @media (max-width: 360px) {

@@ -81,10 +81,12 @@ border-radius: 10px;
 }
 
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .appointment-updated {
     max-width: 100%;
     padding: 12px;
+    margin-top: 25px;
+    padding-bottom: 30px;
   }
 
   .appoinment {
@@ -108,7 +110,6 @@ border-radius: 10px;
   }
 
   .details {
-    max-width: 120px;
     width: 90%;
     padding: 6px 8px;
   }

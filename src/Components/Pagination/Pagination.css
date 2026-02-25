@@ -1,0 +1,98 @@
+.pagination-container {
+    display: none;
+    margin-bottom: 50px;
+
+}
+
+.pagination-arrow {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 6px;
+    padding: 0 8px; 
+    min-width: 32px;
+    height: 32px;
+    background: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    color: #434343;
+}
+
+.pagination-number {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    min-width: 32px;
+    height: 32px;
+    background: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    border-radius: 12px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #434343;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.pagination-number.active {
+    background: var(--brand-yellow);
+    color: #FFFFFF;
+    font-weight: 600;
+}
+
+.pagination-ellipsis {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 32px;
+    height: 32px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #434343;
+    user-select: none;
+}
+
+/* ========== RESPONSIVE ========== */
+
+/* Tablet - Show pagination */
+@media (max-width: 768px) {
+    .pagination-container {
+        display: flex !important;
+        gap: 6px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .pagination-arrow,
+    .pagination-number {
+        height: 32px;
+        min-width: 32px;
+        font-weight: 600;
+    }
+
+    .pagination-arrow svg{
+        height: 16px!important;
+        width: 16px!important;
+    }
+
+    .pagination-number{
+        font-size: 13px;
+    }
+
+    .pagination-ellipsis {
+        min-width: 32px;
+        height: 32px;
+        font-size: 13px;
+    }
+}
+

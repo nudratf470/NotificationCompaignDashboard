@@ -63,25 +63,30 @@ const SlotUpdatedAppointmentPage = () => {
 
     {/* Left wide sidebar */}
     <div className="slot-components-sidebar mt-3">
-      <div className="slot-template-summary-card">
-        <div className="slot-summary-item">
-          <span className="slot-summary-label">Template Name</span>
-          <span className="slot-summary-value">Slot Updated Notification</span>
-        </div>
-        <div className="slot-summary-item">
-          <span className="slot-summary-label">Notification Purpose</span>
-          <span className="slot-summary-value">Slot Updated</span>
-        </div>
-        <div className="slot-summary-item">
-          <span className="slot-summary-label">Repeat Pattern</span>
-          <span className="slot-summary-value">Once</span>
-        </div>
-        <div className="slot-summary-item lastgroup">
-          <span className="slot-summary-label">Group</span>
-          <span className="slot-summary-value">Group 1 (256 people)</span>
-        </div>
+  <div className="slot-template-summary-card">
+    <div className="slot-summary-item">
+      <span className="slot-summary-label template-name">Template Name</span>
+      <span className="slot-summary-value slot-updated-notification">Slot Updated Notification</span>
+    </div>
+
+    {/* Wrap these three in notification-details */}
+    <div className="notification-details">
+      <div className="slot-summary-item">
+        <span className="slot-summary-label">Notification Purpose</span>
+        <span className="slot-summary-value">Slot Updated</span>
+      </div>
+      <div className="slot-summary-item">
+        <span className="slot-summary-label">Repeat Pattern</span>
+        <span className="slot-summary-value">Once</span>
+      </div>
+      <div className="slot-summary-item lastgroup">
+        <span className="slot-summary-label">Group</span>
+        <span className="slot-summary-value">Group 1 (256 people)</span>
       </div>
     </div>
+
+  </div>
+</div>
 
     {/* Main center content */}
     <div className="slot-dashboard-status">

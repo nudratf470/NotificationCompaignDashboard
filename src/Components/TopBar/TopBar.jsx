@@ -1,9 +1,9 @@
-import React from "react";
 import moon from "../../assets/icons/moon.svg";
 import plus from "../../assets/icons/plus.svg";
 import { Col, Row, Button, InputGroup, FormControl } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
+
 import "./TopBar.css";
 
 const TopBar = ({
@@ -25,7 +25,7 @@ const TopBar = ({
 
   return (
     <Row className="top-bar align-items-center mx-0 px-2">
-      <Col className={`topbar-left d-flex align-items-center gap-2 p-0 ${showToggle ? "col-auto" : ""}`}>
+      <Col className={`topbar-left d-flex align-items-center gap-0 gap-sm-2 p-0 ${showToggle ? "col-auto" : ""}`}>
         <div className="moon-icon">
           <img src={moon} alt="moon" />
         </div>
@@ -34,7 +34,7 @@ const TopBar = ({
           </h3>
 
         {showSearch && (
-          <InputGroup className="search-bar d-none d-sm-inline-flex d-flex align-items-center">
+          <InputGroup className="search-bar d-none d-md-inline-flex d-flex align-items-center">
             <InputGroup.Text className="search-icon">
               <svg width="15" height="15" viewBox="0 0 15 15" fill="none">
                 <path
@@ -108,7 +108,7 @@ const TopBar = ({
         </Col>
       )}
 
-      <Col xs="auto" className="d-flex align-items-center gap-2 p-0 d-none d-sm-inline-flex">
+      <Col xs="auto" className="d-flex align-items-center gap-2 p-0">
 
         {showAddButton && (
           <button className="add">Add</button>

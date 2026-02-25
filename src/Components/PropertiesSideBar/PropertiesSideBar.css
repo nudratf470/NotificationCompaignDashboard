@@ -1,14 +1,13 @@
-/* Next Button Container */
 .nextbtnContainer {
   width: 100%;
   max-width: 237px;
   height: 66px;
-  background: #F9F9FF;
+  background: #F9F9FF!important;
   border-radius: 12px;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 8px;
+  padding: 0 20px;
   margin: 0 auto;
 }
 .previewOptions {

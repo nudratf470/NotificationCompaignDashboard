@@ -1,4 +1,3 @@
-import React from 'react'
 import Header from '../../Components/Header/Header'
 import TopBar from '../../Components/TopBar/TopBar'
 import SideBar from '../../Components/SideBar/SideBar'
@@ -15,7 +14,6 @@ import calenderwhite from "../../assets/icons/calenderwhite.svg";
 import clipboardwhite from "../../assets/icons/clipboardwhite.svg";
 import documentwhite from "../../assets/icons/documentwhite.svg";
 import businesswhite from "../../assets/icons/businesswhite.svg";
-
 import './onboardingType.css';
 
 const OnboardingType = () => {
@@ -27,6 +25,7 @@ const OnboardingType = () => {
   { src: clipBoard, activeSrc:clipboardwhite, alt: "clipBoard" },
   { src: business, activeSrc:businesswhite, alt: "business" },
 ];
+
   return (
     <div className='OnboardingType'>
     <Header/>

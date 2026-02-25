@@ -5,7 +5,7 @@ import "./NotificationPreview.css";
 const NotificationPreview = () => {
   return (
     <>
-      <div className="appointment-updated mt-5">
+      <div className="appointment-updated mt-md-5">
         <span>9:41</span>
         <div className="appoinment d-flex gap-3">
           <div className="Bell-iconbg">

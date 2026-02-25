@@ -71,7 +71,7 @@ const SlotNotificationPage = () => {
   ];
 
   return (
-    <div className="update-appointment-page">
+    <div className="slot-notification-page">
       <Header />
       <TopBar heading="Create Notification Campaign" />
 

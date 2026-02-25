@@ -223,35 +223,18 @@
 }
 
 @media (max-width: 768px) {
-    .search-bar {
-        margin-left: 15px;
-        max-width: 200px;
-    }
-}
+    
 
-@media (max-width: 576px) {
-    .search-bar {
+    .add{
         display: none;
     }
-
-    .top-bar .col:first-child {
-        gap: 0.75rem !important;
-    }
-
-    .topbar-heading {
-        font-size: 16px;
-        font-weight: 400;
-    }
-
-    .yellowButton {
-        display: none!important;
-    }
-
-    .btn-text {
-        display: none!important;   
-    }
-
     .moon-icon{
-        margin-left: 3px;
+        margin-left: 12px!important;
+    }
+    .setting-icon{
+        margin-right: 12px!important;
+    }
+    .search-bar{
+        display: none!important;
     }
 }

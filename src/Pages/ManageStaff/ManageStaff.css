@@ -1,21 +1,31 @@
 .manageStaff {
   background-color: #EBECF7 !important;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
+.nextbtnContainer {
+  width: 100%;
+  height: 66px;
+  background: transparent !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
 .manageStaff-bodyContainer {
   display: flex;
-  flex: 1;  
+  flex: 1;
 }
 
 .manageStaff-dashboard {
   margin: 0;
   flex: 1;
 }
+
 .next-button {
-  max-width: 300px;
+  min-width: 300px;
   width: 100%;
   border: none !important;
   background: #FFD705;
@@ -26,71 +36,168 @@
   padding: 10px 20px;
   cursor: pointer;
   background: #FFD705;
-  border-radius: 128px;
+  border-radius: 128px !important;
 }
 
-
-  .yellow-next-button {
+.yellow-next-button {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
-  top: -70px;
-  width: 100%;
-
+  margin: auto;
+  margin-bottom: 40px !important;
+  margin-top: 0 !important;
 }
 
-
-@media (max-width: 992px) {
-  .yellow-next-button {
-    margin-top: 20px;   
-       width: 100%;
-          display: flex!important;
-  justify-content: center!important;
-  align-items: center!important;
-  }
-
-  .next-button {
-    max-width: 220px;   
-    font-size: 13px;
-    padding: 8px 16px;
-  }
+.search-container {
+  display: none !important;
+  margin-top: 10px;
 }
+
+.pagination-info {
+  display: none !important;
+}
+
+.pagination-info p {
+  font-size: 12px;
+  margin-left: 20px;
+}
+
+.filter {
+  background: #FFEF9C;
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  color: #745D00;
+  border: none !important;
+  padding: 0 20px;
+  margin-right: 20px;
+}
+
+.mobile-search-bar {
+  background: #FFFFFF;
+  border: 1px solid #E8E8E8;
+  border-radius: 8px;
+  height: 36px;
+  padding: 0;
+  margin-left: 20px;
+  flex: 1;
+}
+
+.mobile-search-bar .search-icon {
+  background: transparent;
+  border: none;
+  padding-left: 12px;
+  border-radius: 0;
+}
+
+.mobile-search-bar .search-input {
+  background: transparent;
+  border: none;
+  font-size: 14px;
+  font-weight: 400;
+  color: #939393;
+}
+
+.mobile-search-bar .search-input::placeholder {
+  font-size: 14px;
+  font-weight: 400;
+  color: #939393;
+  margin: none;
+  padding: none;
+}
+
+.form-control {
+  padding: 0 !important;
+}
+
+.mobile-search-bar .search-input:focus {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  outline: none;
+}
+
+.mobile-search-bar:focus-within {
+  border-color: #E8E8E8;
+  box-shadow: none;
+}
+
+.mobile-search-bar.input-group {
+  flex-wrap: nowrap;
+}
+
+.mobile-search-bar>* {
+  margin: 0;
+}
+
 
 @media (max-width: 768px) {
 
-  /* Hide sidebar */
+  .pagination-info {
+    display: block !important;
+  }
+
+  .nextbtnContainer {
+    width: 100%;
+    max-width: 100%;
+    height: 66px;
+    background: #F9F9FF;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+
+  .yellow-next-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90% !important;
+    background-color: white;
+    border-radius: 12px;
+    border: 0.5px solid #EEEEEE;
+    margin: auto;
+    padding: 20px;
+  }
+
+  .next-button {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 32px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
   .manageStaff-sidebar {
     display: none;
   }
 
-  /* Full width dashboard */
   .manageStaff-dashboard {
     width: 100%;
     padding: 12px;
+    padding-top: 0;
   }
 
-  /* Stack layout */
   .manageStaff-bodyContainer {
     flex-direction: column;
   }
 
-}
-
-@media (max-width: 576px) {
   .yellow-next-button {
     margin-top: 16px;
     width: 100%;
-      display: flex!important;
-  justify-content: center!important;
-  align-items: center!important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
   }
 
-  .next-button {
-    max-width: 180px;   
-    font-size: 12px;
-    line-height: 24px;
-    padding: 6px 14px;
-    border-radius: 6px;
+  .search-container {
+    display: flex !important;
+    gap: 10px;
   }
+
 }

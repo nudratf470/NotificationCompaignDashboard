@@ -13,13 +13,11 @@
   overflow-x: hidden;
 }
 
-/* Left narrow sidebar */
 .slot-status-sidebar {
   flex-shrink: 0;
   width: 47px;
 }
 
-/* Left wide sidebar */
 .slot-components-sidebar {
   flex-shrink: 0;
   width: 237px;
@@ -81,7 +79,7 @@
   padding: 8px 12px;
   margin-top: 8px;
   background: #F8F8F8;
-  border: 1.5px solid #EAEAEA;
+  border: 0.5px solid #EAEAEA;
   border-radius: 8px;
   height: 50px;
   gap: 10px;
@@ -110,17 +108,15 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
-  width: 100%; /* 👈 removed hardcoded 755px */
+  width: 100%; 
 }
 
-/* Right sidebar */
 .slot-properties-sidebar-wrapper {
   flex-shrink: 0;
   width: 237px;
   margin-right: 20px;
 }
 
-/* Tablet */
 @media (max-width: 1024px) {
   .slot-components-sidebar,
   .slot-properties-sidebar-wrapper {
@@ -143,18 +139,81 @@
     width: 100%;
   }
   .slot-notificationCard {
-    min-height: 600px;
     padding: 16px 12px;
+    padding-top: 0px;
+  }
+
+  .slot-notification-label{
+    background-color: white;
+    margin: 0;
+  }
+
+  .slot-components-sidebar {
+    width: 100%;
+  }
+
+  .slot-template-summary-card {
+    gap: 8px;
+  }
+
+  .slot-summary-item .slot-updated-notification{
+    font-weight: bold;
+    font-size: 14px;
+  }
+
+  .slot-summary-label{
+    font-size: 10px;
+  }
+
+  .template-name{
+    font-size: 12px;
+  }
+
+  .slot-summary-item {
+    flex-direction: column;
+    border-bottom: none;
+  }
+
+  .slot-summary-item:first-child {
+    border-bottom: 2px solid #EDEDED;
+    padding-bottom: 15px;
+  }
+
+  .notification-details {
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+    width: 100%;
+  }
+
+  .slot-summary-value{
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  .notification-details .slot-summary-item {
+    flex: 1;
+    flex-direction: column;
+    border-bottom: none;
+    border-right: none;
+    padding: 0 2px;
+  }
+
+  .notification-details .slot-summary-item:first-child {
+    padding-left: 0;
+    border-bottom: none;
+  }
+
+  .notification-details .slot-summary-item:last-child {
+    padding-right: 0;
+  }
+
+  .slot-bodyContainer {
+    gap:0;
+  }
+
+  .slot-content-wrapper{
+    gap:15px;
   }
 }
 
-/* Small phones */
-@media (max-width: 480px) {
-  .slot-summary-label { font-size: 11px; }
-  .slot-summary-value { font-size: 13px; }
-  .slot-notification-label h5 { font-size: 13px; }
-  .slot-notificationCard {
-    height: auto;
-    min-height: 300px;
-  }
-}
