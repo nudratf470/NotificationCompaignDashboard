@@ -1,0 +1,131 @@
+.moonicon{
+display: flex;
+align-items: center;
+justify-content: center;
+width: 33px;
+height: 33px;
+background: #F6F6F6;
+border-radius: 8px;
+}
+
+.mobile-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 51px;
+  padding: 0 16px;
+  background: #ffffff;
+  border: 1px solid #DCDCDC;
+}
+
+/* ── Layout 1: Dashboard ───────────────────── */
+
+.mobile-date {
+  font-weight: 400;
+  font-size: 14px;
+  color: black;
+}
+
+.mobile-right-group {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.mobile-bell-wrapper {
+  position: relative;
+  cursor: pointer;
+}
+
+.mobile-bell-badge {
+  position: absolute;
+  top: -4px;
+  right: -5px;
+  background: #4A4A4A;
+  color: white;
+  border-radius: 50%;
+  width: 14px;
+  height: 14px;
+  font-size: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobile-avatar{
+    display: flex;
+align-items: center;
+justify-content: center;
+width: 33px;
+height: 33px;
+background: #F6F6F6;
+border-radius: 8px;
+}
+
+.mobile-avatar svg {
+  width: 18px;
+  height: 18px;
+  fill: black; 
+  display: block;
+}
+
+/* ── Layouts 2 & 3: shared left group ─────── */
+
+.mobile-left-group {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.icon-heading{
+    gap:14px;
+}
+
+.mobile-title {
+  font-weight: 400;
+  font-size: 16px;
+  color: #404145;
+  margin: 0;
+}
+
+/* ── Layout 2: List page ───────────────────── */
+
+.mobile-logo {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #ffd700;
+  font-weight: 700;
+  font-size: 14px;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobile-settings-icon {
+  width: 30px;
+  height: 30px;
+  background: #ffffff;
+  border: 0.5px solid #DCDCDC;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+/* ── Layout 3: Editor page ─────────────────── */
+
+.mobile-back-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  background: #ffffff;
+  border: 0.5px solid #dcdcdc;
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 0;
+}
