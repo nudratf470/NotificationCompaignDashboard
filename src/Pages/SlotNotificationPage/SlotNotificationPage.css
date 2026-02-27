@@ -195,6 +195,10 @@
     margin: 10px;
   }
 
+  .bodylabelContainertwo{
+    margin-top: 0;
+  }
+
     .bodylabelContainer,
   .bodylabelContainertwo{
     color: white!important;

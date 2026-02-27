@@ -1,14 +1,36 @@
+/* ─── Base Sidebar ─────────────────────────────────────────────────── */
 .statusSidebarMenu {
   width: 47px !important;
   display: flex;
   justify-content: center;
   min-height: 100vh;
-  box-sizing: content-box!important;
+  box-sizing: content-box !important;
+  transition: width 0.25s ease;
+  overflow: hidden;
+  position: relative;
+  z-index: 100;
 }
 
+.statusSidebarMenu.expanded {
+  overflow: visible;
+}
+
+.statusSidebarMenu.expanded .statusSidebar-nav {
+  position: absolute;
+  left: 0;
+  top: 0;
+  min-height: 100%;
+  z-index: 100;
+}
+
+.statusSidebarMenu.expanded {
+  width: 47px !important; /* wrapper stays 47px — doesn't push page content */
+}
+
+/* ─── Nav Container ────────────────────────────────────────────────── */
 .statusSidebar-nav {
   padding: 24px 0;
-  width: 100%;
+  width: 47px;
   border: 2px solid var(--brand-yellow);
   border-radius: 8px;
   display: flex;
@@ -16,64 +38,165 @@
   align-items: center;
   gap: 24px;
   background-color: white;
+  overflow: hidden;
+  transition: width 0.25s ease;
 }
 
+.statusSidebarMenu.expanded .statusSidebar-nav {
+  width: 180px;
+  overflow: visible;
+}
+
+/* ─── Every Nav Link ───────────────────────────────────────────────── */
 .statusSidebar-nav .statusSidebar-link {
   padding: 0 !important;
   margin: 0 !important;
   width: 100%;
   display: flex;
-  justify-content: center;
+  flex-direction: row;
   align-items: center;
+  justify-content: flex-start;
   position: relative;
+  cursor: pointer;
+  text-decoration: none;
 }
 
-.statusSidebar-divider{
-  margin-top: -20px;
-}
-
-.statusSidebar-group{
-  margin-top: -20px;
-}
-
+/* ─── Icon Wrap — fixed 37px column, never shifts ──────────────────── */
 .statusSidebar-icon-wrap {
   height: 34px;
   width: 37px;
+  min-width: 37px;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
 }
 
-.statusSidebar-link.active {
+/* ─── Label (hidden when collapsed) ────────────────────────────────── */
+.statusSidebar-label {
+  font-size: 13px;
+  font-weight: 500;
+  color: #2d2d2d;
+  white-space: nowrap;
+  opacity: 0;
+  max-width: 0;
+  overflow: hidden;
+  transition: opacity 0.2s ease 0.05s, max-width 0.25s ease;
+}
+
+.statusSidebarMenu.expanded .statusSidebar-label {
+  opacity: 1;
+  max-width: 140px;
+  padding-right: 10px;
+}
+
+/* ════════════════════════════════════════════════
+   COLLAPSED STATE
+   ════════════════════════════════════════════════ */
+
+/* Active: right-flush yellow pill */
+.statusSidebarMenu:not(.expanded) .statusSidebar-link.active {
   justify-content: flex-end;
 }
 
-.statusSidebar-nav > .statusSidebar-link.active .statusSidebar-icon-wrap {
-  background: var(--brand-yellow)!important;
+.statusSidebarMenu:not(.expanded) .statusSidebar-link.active .statusSidebar-icon-wrap {
+  background: var(--brand-yellow) !important;
   border-radius: 5px 0 0 5px;
   height: 34px;
   margin-right: 0;
-  margin-left: auto; 
+  margin-left: auto;
 }
 
-.statusSidebar-link:not(.active) {
-  justify-content: center;
+/* Hover collapsed: same right-flush yellow pill + white icon */
+.statusSidebarMenu:not(.expanded) .statusSidebar-link:not(.active):hover {
+  justify-content: flex-end;
+}
+
+.statusSidebarMenu:not(.expanded) .statusSidebar-link:not(.active):hover .statusSidebar-icon-wrap {
+  background: var(--brand-yellow) !important;
+  border-radius: 5px 0 0 5px;
+  height: 34px;
+  margin-right: 0;
+  margin-left: auto;
+}
+
+/* Turn icon white on hover (collapsed) */
+.statusSidebarMenu:not(.expanded) .statusSidebar-link:not(.active):hover .statusSidebar-icon {
+  filter: brightness(0) invert(1);
+}
+
+/* ════════════════════════════════════════════════
+   EXPANDED STATE
+   ════════════════════════════════════════════════ */
+
+/* Active row: yellow pill with small left gap (matching screenshot) */
+.statusSidebarMenu.expanded .statusSidebar-link.active {
+  background: var(--brand-yellow);
+  border-radius: 6px 0 0 6px;
+  margin-left: 6px !important;
+  width: calc(100% - 6px) !important;
+}
+
+.statusSidebarMenu.expanded .statusSidebar-link.active .statusSidebar-icon-wrap {
+  background: transparent !important;
+  border-radius: 0;
+}
+
+.statusSidebarMenu.expanded .statusSidebar-link.active .statusSidebar-label {
+  color: white;
+  font-weight: 600;
+}
+
+/* Active icon stays white (use activeSrc or invert) */
+.statusSidebarMenu.expanded .statusSidebar-link.active .statusSidebar-icon {
+  filter: brightness(0) invert(1);
+}
+
+/* Hover row: same yellow pill with left gap + white icon + white text */
+.statusSidebarMenu.expanded .statusSidebar-link:not(.active):hover {
+  background: var(--brand-yellow);
+  border-radius: 6px 0 0 6px;
+  margin-left: 6px !important;
+  width: calc(100% - 6px) !important;
+}
+
+.statusSidebarMenu.expanded .statusSidebar-link:not(.active):hover .statusSidebar-icon-wrap {
+  background: transparent !important;
+}
+
+/* Turn icon white on hover (expanded) */
+.statusSidebarMenu.expanded .statusSidebar-link:not(.active):hover .statusSidebar-icon {
+  filter: brightness(0) invert(1);
+}
+
+.statusSidebarMenu.expanded .statusSidebar-link:not(.active):hover .statusSidebar-label {
+  color: white;
+}
+
+/* ─── Divider ──────────────────────────────────────────────────────── */
+.statusSidebar-divider {
+  margin-top: -20px;
+}
+
+/* ─── Group ────────────────────────────────────────────────────────── */
+.statusSidebar-group {
+  margin-top: -20px;
+  width: 100%;
 }
 
 .statusSidebar-icon {
   display: block;
 }
 
-
+/* ─── Responsive ───────────────────────────────────────────────────── */
 @media (max-width: 768px) {
-.statusSidebarMenu{
-display: none;
+  .statusSidebarMenu {
+    display: none;
   }
 }
 
 @media (max-width: 576px) {
- .statusSidebarMenu{
-display: none;
+  .statusSidebarMenu {
+    display: none;
   }
- 
 }
