@@ -56,7 +56,7 @@ const UpdateAppointmentPage = () => {
   return (
     <div className="update-appointment-page">
       <Header />
-      <TopBar heading="Edit Notification Template" showToggle={true} showUndoRedo={true} showChangesSaved={true}/>
+      <TopBar icons={campaignAndAdminIcons} heading="Edit Notification Template" showToggle={true} showUndoRedo={true} showChangesSaved={true}/>
 
       <div className="body-container">
         {/* Left Narrow Sidebar */}

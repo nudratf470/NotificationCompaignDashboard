@@ -5,6 +5,10 @@
   flex-direction: column;
 }
 
+.mobile-toggle-only {
+  display: none;
+}
+
 .slot-bodyContainer {
   display: flex;
   gap: 20px;
@@ -117,12 +121,7 @@
   margin-right: 20px;
 }
 
-@media (max-width: 1024px) {
-  .slot-components-sidebar,
-  .slot-properties-sidebar-wrapper {
-    width: 180px;
-  }
-}
+
 
 /* Mobile */
 @media (max-width: 768px) {
@@ -130,6 +129,23 @@
     flex-direction: column;
     padding: 0 10px 20px 10px;
   }
+
+   .mobile-toggle-only {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 8px 16px;
+  
+  }
+
+
+.mobile-undo-redo-group {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
   .slot-status-sidebar {
     display: none;
   }

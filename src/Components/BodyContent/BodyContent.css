@@ -51,4 +51,13 @@ display: none !important;
   .NotificationPreview h4{
   margin-left: 0;
 }
+
+.preview-cards {
+    flex-direction: column;
+  }
+
+   .NotificationPreview {
+    flex: unset;
+    width: 100%;
+  }
 }

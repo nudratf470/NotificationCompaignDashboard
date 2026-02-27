@@ -12,7 +12,7 @@ const NotificationPreview = () => {
             <img src={Bellicon} className="" />
           </div>
           <div class="appointmentschedule ">
-            <h4 className="p-0 m-0 d-flex gap-5 align-items-center"> Appointment Updated <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <h4 className="p-0 m-0 d-flex justify-content-between align-items-center"> Appointment Updated <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M0.666992 8.6665L4.66699 4.6665L0.666992 0.666504" stroke="#818181" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
             </svg>
             </h4>

@@ -2,7 +2,7 @@
 .notifications-table-container {
   background: #fff;
   border-radius: 12px;
-  margin: 15px 20px 0 25px;
+  margin: 15px 20px 0 20px;
   overflow-x: auto;
   padding-bottom: 50px;
   border: 1px solid #E9E9E9;
@@ -26,8 +26,7 @@
 
 /* ================= TABLE ================= */
 .notifications-table {
-  width: 100%;
-  min-width: 1000px;
+ 
   border-collapse: collapse;
 }
 
@@ -144,11 +143,6 @@
 
 /* ================= RESPONSIVE ================= */
 
-@media (max-width: 1024px) {
-  .notifications-table {
-    min-width: 850px;
-  }
-}
 
 @media (max-width: 768px) {
 
@@ -178,7 +172,4 @@
     width: auto !important;
   }
 
-  .notifications-table {
-    min-width: 700px;
-  }
 }

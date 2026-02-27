@@ -86,6 +86,7 @@ const ManageStaff = () => {
     <div className='manageStaff'>
       <Header />
       <TopBar
+        icons={campaignIcons}
         heading="Template list"
         headingWeight="400"
         headingSize="16px"

@@ -30,7 +30,7 @@ const OnboardingType = () => {
     <div className='OnboardingType'>
     <Header/>
 
-    <TopBar heading="Dashboard" showButton={true} buttonText="Create New" buttonPath="/manage-staff" />
+    <TopBar icons={campaignIcons} heading="Dashboard" showButton={true} buttonText="Create New" buttonPath="/manage-staff" />
 
     <div className="bodyContainer">
       <div className="sidebar">

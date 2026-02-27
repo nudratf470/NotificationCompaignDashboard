@@ -129,3 +129,133 @@ border-radius: 8px;
   cursor: pointer;
   padding: 0;
 }
+
+/* ── Keep all your existing MobileTopBar styles above this ── */
+
+/* Moon icon button reset */
+.moonicon {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ─── Backdrop ──────────────────────────────────────────────────────────── */
+.mobile-nav-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.25);
+  z-index: 200;
+}
+
+/* ─── Drawer ────────────────────────────────────────────────────────────── */
+.mobile-nav-drawer {
+  position: absolute;
+  top: 0;
+  top: 51px; 
+  height: calc(100vh - 51px);
+  width: 180px;
+  height: 100vh;
+  background: white;
+  border: 2px solid var(--brand-yellow);
+  border-radius: 0 8px 8px 0;
+  z-index: 201;
+  overflow-y: auto;
+  padding: 16px 0;
+  animation: slideInLeft 0.22s ease;
+}
+
+@keyframes slideInLeft {
+  from { transform: translateX(-100%); opacity: 0; }
+  to   { transform: translateX(0);     opacity: 1; }
+}
+
+/* ─── Nav List ──────────────────────────────────────────────────────────── */
+.mobile-nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 8px 0;
+}
+
+/* ─── Each Nav Item ─────────────────────────────────────────────────────── */
+.mobile-nav-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  text-align: left;
+  border-radius: 6px 0 0 6px;
+  margin-left: 6px;
+  width: calc(100% - 6px);
+}
+
+.mobile-nav-item span {
+  font-size: 12px;
+  font-weight: 400;
+  color: #2d2d2d;
+  white-space: nowrap;
+  padding-right: 10px;
+}
+
+/* ─── Icon Wrap ─────────────────────────────────────────────────────────── */
+.mobile-nav-icon-wrap {
+  height: 34px;
+  width: 37px;
+  min-width: 37px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.mobile-nav-icon-wrap img {
+  display: block;
+}
+
+/* ─── Active Item ───────────────────────────────────────────────────────── */
+.mobile-nav-item.active {
+  background: var(--brand-yellow);
+}
+
+.mobile-nav-item.active span {
+  color: white;
+  font-weight: 600;
+}
+
+.mobile-nav-item.active .mobile-nav-icon-wrap img {
+  filter: brightness(0) invert(1);
+}
+
+/* ─── Hover ─────────────────────────────────────────────────────────────── */
+.mobile-nav-item:not(.active):hover {
+  background: var(--brand-yellow);
+}
+
+.mobile-nav-item:not(.active):hover span {
+  color: white;
+}
+
+.mobile-nav-item:not(.active):hover .mobile-nav-icon-wrap img {
+  filter: brightness(0) invert(1);
+}
+
+/* ─── Divider ───────────────────────────────────────────────────────────── */
+.mobile-nav-divider {
+  padding: 4px 12px;
+}
+
+/* ─── Group ─────────────────────────────────────────────────────────────── */
+.mobile-nav-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}

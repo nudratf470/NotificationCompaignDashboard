@@ -97,7 +97,7 @@ color: #000000;
 
 
 /* ---------------- Mobile ---------------- */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
 
   .body-container {
     flex-direction: column;

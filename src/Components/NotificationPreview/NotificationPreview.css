@@ -32,11 +32,10 @@ line-height: 16px;
 
 .Bell-iconbg {
 display: flex;
-flex-direction: row;
 justify-content: center;
 align-items: center;
 width: 60px!important;
-height: 40px;
+height: 40px!important;
 background: #155DFC;
 border-radius: 10px;
 }
@@ -84,21 +83,23 @@ border-radius: 10px;
 @media (max-width: 768px) {
   .appointment-updated {
     max-width: 100%;
-    padding: 12px;
+    padding-top: 15px;
+    padding-right: 30px;
     margin-top: 25px;
     padding-bottom: 30px;
   }
 
   .appoinment {
     max-width: 100%;
-    padding: 12px;
+    padding: 14px;
     flex-direction: row; 
+    padding-right: 25px;
     gap: 10px;
   }
 
   .Bell-iconbg {
-    width: 40px;
-    height: 40px;
+    width: 40px!important;
+    height: 40px!important;
   }
 
   .appoinment h4 {

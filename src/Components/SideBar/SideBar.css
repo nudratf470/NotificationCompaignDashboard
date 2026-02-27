@@ -24,7 +24,7 @@
 }
 
 .statusSidebarMenu.expanded {
-  width: 47px !important; /* wrapper stays 47px — doesn't push page content */
+  width: 47px !important; 
 }
 
 /* ─── Nav Container ────────────────────────────────────────────────── */
@@ -61,7 +61,6 @@
   text-decoration: none;
 }
 
-/* ─── Icon Wrap — fixed 37px column, never shifts ──────────────────── */
 .statusSidebar-icon-wrap {
   height: 34px;
   width: 37px;
@@ -74,9 +73,9 @@
 
 /* ─── Label (hidden when collapsed) ────────────────────────────────── */
 .statusSidebar-label {
-  font-size: 13px;
-  font-weight: 500;
-  color: #2d2d2d;
+  font-size: 12px;
+  font-weight: 400!important;
+  color: #5c5c5c;
   white-space: nowrap;
   opacity: 0;
   max-width: 0;
@@ -195,8 +194,4 @@
   }
 }
 
-@media (max-width: 576px) {
-  .statusSidebarMenu {
-    display: none;
-  }
-}
+

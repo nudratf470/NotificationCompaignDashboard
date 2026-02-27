@@ -73,7 +73,7 @@ const SlotNotificationPage = () => {
   return (
     <div className="slot-notification-page">
       <Header />
-      <TopBar heading="Create Notification Campaign" />
+      <TopBar heading="Create Notification Campaign" icons={campaignAndAdminIcons}/>
 
       <div className="slot-body">
         {/* LEFT SIDEBAR */}

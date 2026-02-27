@@ -167,7 +167,6 @@
 }
 
 
-
 /* ---------- Mobile ---------- */
 @media (max-width: 768px) {
 
@@ -216,27 +215,3 @@
   }
 }
 
-/* ---------- Small phones ---------- */
-@media (max-width: 480px) {
-  .label-title,
-  .Body-label-title {
-    font-size: 13px;
-  }
-
-  .label-name,
-  .Body-label-name {
-    font-size: 9px;
-  }
-
-  .Body-labels-container {
-    padding: 10px 14px;
-  }
-
-  .dropdown-icon {
-    margin-left: 8px;
-  }
-
-  .Button-wrapper {
-    margin-right: 10px;
-  }
-}
